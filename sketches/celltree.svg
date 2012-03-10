@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="celltree.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3801"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="687.35387"
+     inkscape:cy="522.15387"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="753"
+     inkscape:window-x="-2"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="33.57542"
+       y="509.14355"
+       id="text3013"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3015"
+         x="33.57542"
+         y="509.14355">Chloroplast</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="22.223356"
+       y="73.019287"
+       id="text3017"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3019"
+         x="22.223356"
+         y="73.019287" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans"
+       x="183.87006"
+       y="510.61542"
+       id="text4256"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4258"
+         x="183.87006"
+         y="510.61542">Glucose</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 142.04133,505.20397 35.71428,0"
+       id="path4262"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4266"
+       y="512.14355"
+       x="297.14685"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       xml:space="preserve"><tspan
+         y="512.14355"
+         x="297.14685"
+         id="tspan4268"
+         sodipodi:role="line">Mitochondria</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 259.11275,506.84682 33.57143,0"
+       id="path4276"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g4394"
+       transform="translate(-18.672954,426.98464)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 447.78571,79.862181 33.57143,0"
+         id="path4281"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans"
+         x="490.54303"
+         y="83.630768"
+         id="text4283"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4285"
+           x="490.54303"
+           y="83.630768">Energy</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="438.93362"
+       id="text4306"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4308"
+         x="811.42859"
+         y="438.93362">Nucleus - blueprints for proteins, &quot;brain&quot;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="470.54904"
+       id="text4310"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4312"
+         x="811.42859"
+         y="470.54904">Ribosome - turns RNA + amino acids into proteins</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="505.90442"
+       id="text4314"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4316"
+         x="811.42859"
+         y="505.90442">Endoplasmic Reticulum - roads</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="539.2395"
+       id="text4318"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4320"
+         x="811.42859"
+         y="539.2395">Rough ER - houses ribosomes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.7489"
+       y="568.02881"
+       id="text4322"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4324"
+         x="811.7489"
+         y="568.02881">Smooth ER - lipids, other metabolic processes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="604.89941"
+       id="text4326"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4328"
+         x="811.42859"
+         y="604.89941">Membrane , Wall</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="812.10052"
+       y="642.27502"
+       id="text4330"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4332"
+         x="812.10052"
+         y="642.27502">Cytoskeleton - structure</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="812.10052"
+       y="680.15576"
+       id="text4334"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4336"
+         x="812.10052"
+         y="680.15576">Cytoplasm - empty space</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="812.10052"
+       y="716.52124"
+       id="text4338"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4340"
+         x="812.10052"
+         y="716.52124">Golgi apparatus - makes lysosomes, transports things to other places</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="812.10052"
+       y="746.82574"
+       id="text4342"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4344"
+         x="812.10052"
+         y="746.82574">Chloroplast - makes glucose from sunlight</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="783.19122"
+       id="text4346"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4348"
+         x="811.42859"
+         y="783.19122">Mitochondria - makes ATP from glucose</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="812.99072"
+       id="text4350"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4352"
+         x="811.42859"
+         y="812.99072">Lysosomes - break down big things in the cell</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="812.81921"
+       y="846.32581"
+       id="text4354"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4356"
+         x="812.81921"
+         y="846.32581">Vacuole, Vesicle - storage</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="876.12531"
+       id="text4358"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4360"
+         x="811.42859"
+         y="876.12531">Flagellum - movement</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="911.98566"
+       id="text4362"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4364"
+         x="811.42859"
+         y="911.98566">Nucleoid - like nucleus but less so</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="942.79535"
+       id="text4366"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4368"
+         x="811.42859"
+         y="942.79535">Pili - attach to other cells</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="973.60498"
+       id="text4370"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4372"
+         x="811.42859"
+         y="973.60498">Peroxiome - get rid of toxins, uses up oxygen</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="811.42859"
+       y="1009.4653"
+       id="text4374"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4376"
+         x="811.42859"
+         y="1009.4653">Plasmodesmata - connect to friendly cells</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="812.10052"
+       y="1041.7903"
+       id="text4378"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4380"
+         x="812.10052"
+         y="1041.7903">Cilia</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="297.14685"
+       y="552.14355"
+       id="text4382"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4384"
+         x="297.14685"
+         y="552.14355">Mitochondria</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4386"
+       d="m 259.11275,510.84682 33.57143,33.17658"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4388"
+       y="585.60522"
+       x="7.0933585"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="585.60522"
+         x="7.0933585"
+         id="tspan4390"
+         sodipodi:role="line">Oxygen</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 71.448463,582.70396 292.68418,553.73769"
+       id="path4392"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g4399"
+       transform="translate(-18.672954,466.98464)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4401"
+         d="m 447.78571,79.862181 33.57143,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4403"
+         y="83.630768"
+         x="490.54303"
+         style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           y="83.630768"
+           x="490.54303"
+           id="tspan4405"
+           sodipodi:role="line">Energy</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="332.89847"
+       y="682.91827"
+       id="text4415"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4417"
+         x="332.89847"
+         y="682.91827">Toxin</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="12.04133"
+       y="865.91827"
+       id="text4423"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4425"
+         x="12.04133"
+         y="865.91827">Signal - Red, Orange, Yellow, Green, Bluegreen</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="5.612761"
+       y="622.91821"
+       id="text4450"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4452"
+         x="5.612761"
+         y="622.91821">Amine</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="3.4699047"
+       y="730.20398"
+       id="text4454"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4456"
+         x="3.4699047"
+         y="730.20398">Sulphur</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="6.327044"
+       y="684.3468"
+       id="text4462"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4464"
+         x="6.327044"
+         y="684.3468">Benzene</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="9.1841869"
+       y="764.77539"
+       id="text4466"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4468"
+         x="9.1841869"
+         y="764.77539">Sodium</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="11.32704"
+       y="794.63257"
+       id="text4470"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4472"
+         x="11.32704"
+         y="794.63257">Iron</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4474"
+       y="684.28638"
+       x="133.57544"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       xml:space="preserve"><tspan
+         y="684.28638"
+         x="133.57544"
+         id="tspan4476"
+         sodipodi:role="line">Toxin Node</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="9.8984737"
+       y="822.0611"
+       id="text4478"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4480"
+         x="9.8984737"
+         y="822.0611">Cyan</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       x="348.1842"
+       y="822.77539"
+       id="text4482"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4484"
+         x="348.1842"
+         y="822.77539">Cyanotoxin</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="133.18419"
+       y="822.0611"
+       id="text4490"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4492"
+         x="133.18419"
+         y="822.0611">Cyanotoxin Node</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 82.041336,677.91825 46.428564,0"
+       id="path4494"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 57.755618,816.34682 69.285712,0"
+       id="path4496"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 241.32704,677.20396 89.28571,0"
+       id="path4498"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 292.75561,817.77539 49.28572,0"
+       id="path4500"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="431.57544"
+       y="712.28638"
+       id="text4502"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4504"
+         x="431.57544"
+         y="712.28638">Necrotoxin Node</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4506"
+       y="710.91827"
+       x="628.8985"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       xml:space="preserve"><tspan
+         y="710.91827"
+         x="628.8985"
+         id="tspan4508"
+         sodipodi:role="line">Necrotoxin</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 380.3373,678.29585 47.47717,28.28427"
+       id="path4510"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 588.42872,705.2857 35.35534,0"
+       id="path4512"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 66.17986,725.77302 427.81447,710.62074"
+       id="path4514"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g4526"
+       transform="translate(-18.571429,876)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4516"
+         y="-526.50623"
+         x="45.456863"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           y="-526.50623"
+           x="45.456863"
+           id="tspan4518"
+           sodipodi:role="line">Repair Node</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans"
+         x="224.76634"
+         y="-524.48102"
+         id="text4520"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4522"
+           x="224.76634"
+           y="-524.48102">Repair Enzyme</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 165.65878,-531.28011 52.48674,0"
+         id="path4524"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4533"
+       transform="translate(-18.571429,904)">
+      <text
+         xml:space="preserve"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+         x="45.456863"
+         y="-526.50623"
+         id="text4535"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4537"
+           x="45.456863"
+           y="-526.50623">Sustain Node</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4539"
+         y="-524.48102"
+         x="224.76634"
+         style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           y="-524.48102"
+           x="224.76634"
+           id="tspan4541"
+           sodipodi:role="line">Sustain Enzyme</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4543"
+         d="m 165.65878,-531.28011 52.48674,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="133.57544"
+       y="624.28638"
+       id="text4545"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4547"
+         x="133.57544"
+         y="624.28638">Coffee Mug</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4549"
+       d="m 76.041336,617.91825 46.428564,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 254.04133,619.91825 46.42857,0"
+       id="path4551"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4553"
+       y="624.91827"
+       x="310.89847"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Italic"
+       xml:space="preserve"><tspan
+         y="624.91827"
+         x="310.89847"
+         id="tspan4555"
+         sodipodi:role="line">Caffeine</tspan></text>
+    <g
+       id="g5153"
+       transform="translate(-8.5714286,1378)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4561"
+         y="-365.7807"
+         x="29.57143"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           y="-365.7807"
+           x="29.57143"
+           id="tspan4563"
+           sodipodi:role="line">Defensin</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4565"
+         y="-391.49496"
+         x="32.142857"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           y="-391.49496"
+           x="32.142857"
+           id="tspan4567"
+           sodipodi:role="line">Wall</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="17.142859"
+       y="905.505"
+       id="text4569"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4571"
+         x="17.142859"
+         y="905.505">Scoop</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="20"
+       y="934.07648"
+       id="text4573"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4575"
+         x="20"
+         y="934.07648">Flagellum</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       x="300.36115"
+       y="469.14352"
+       id="text4581"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4583"
+         x="300.36115"
+         y="469.14352">Lypoprotein</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans"
+       x="203.92856"
+       y="428.36218"
+       id="text4585"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4587"
+         x="203.92856"
+         y="428.36218">Lipids</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4589"
+       d="m 259.11275,500.84682 33.57143,-35.71429"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 294.28571,453.36218 -37.85714,-30"
+       id="path4595"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4779"
+       y="465.42923"
+       x="66.432571"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       xml:space="preserve"><tspan
+         y="465.42923"
+         x="66.432571"
+         id="tspan4781"
+         sodipodi:role="line">Lypase</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.57142,460.50503 44.28572,37.85715"
+       id="path4785"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 195.71428,421.93361 -63.57142,32.85714"
+       id="path4969"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5159"
+       y="958.07648"
+       x="20"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans;-inkscape-font-specification:Sans Bold"
+       xml:space="preserve"><tspan
+         y="958.07648"
+         x="20"
+         id="tspan5161"
+         sodipodi:role="line">Dump</tspan></text>
+  </g>
+</svg>
