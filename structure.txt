@@ -1,0 +1,15 @@
+STRUCTURE
+
+Overarching namespace 'game'.
+
+src/cell - cell-building scope.
+src/cell/organelle - buildings and routes.
+src/cell/transport - walkers, drifters, interfaces.
+
+src/gui - we'll come back to this one later.
+
+src/world - strategy scope.
+src/world/entity - all entities except scenery.
+src/world/entity/resource - resources.
+src/world/entity/damage - viruses, damage toxins.
+src/world/scenery - contains both flow and scenery-entities.
