@@ -1,0 +1,30 @@
+WORLD SCOPE
+
+World  { Entities }
+
+Entity -> MobileEntity -> DamageToxin
+       -         . . . -> MobileResource
+       -         .     -> Virus
+       -         .     -> Cell . . . . . . .
+       -         .                         .
+       -> StaticEntity -> Base . . . . . . .
+                 .     -> Scenery          .
+                 . . . -> StaticResource   .
+                 .                         .
+Flow             .                         .
+                 .                         .
+Resource . . . . .                         .
+                                           . 
+Damagable  . . . . . . . . . . . . . . . . .
+
+
+CELL SCOPE
+
+Organelle -> Building -> CentreBuilding
+          -           -> EdgeBuilding
+          -> Route
+
+Transport -> CarrierProtein (walker)
+          -> Drifter
+
+Resource (basically just an enum)
