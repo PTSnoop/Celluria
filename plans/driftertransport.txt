@@ -4,8 +4,9 @@ Producer - no interface, just tells route to make drifter at $Point. Drifter dri
 
 Consumer - two options.
           a) Have one method:
-               boolean accept(Resource)
-             which is called by the drifter to let it consume the transported 'Resource' and return if it has accepted it
+               quantity accept(Resource,quantity available)
+             which is called by the drifter to let it consume some (or all with a maximum of 'available') of transported 'Resource' and return how much of the resource it has accepted
+             A Drifter can have infinite available (some large value) to make it never expire. It can also offer less to the consumer than it actually has available
           b) 2 methods 1 to ask if can consume and another to then consume
 I like (a)
 
