@@ -3,8 +3,9 @@ DRIFTER TRANSPORT
 Producer - no interface, just tells route to make drifter at $Point. Drifter drifts.
 
 Consumer - two options.
-          a) Have one method quantity accept(Resource,quantity available) which is called by the drifter and can consume up to available of resource and returns how much it has consumed. 
-                             (can remove second arg and change return to bool if drifters are set to only transport 1 of an item)
+          a) Have one method:
+               boolean accept(Resource)
+             which is called by the drifter to let it consume the transported 'Resource' and return if it has accepted it
           b) 2 methods 1 to ask if can consume and another to then consume
 I like (a)
 
