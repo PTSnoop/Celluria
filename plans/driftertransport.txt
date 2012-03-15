@@ -2,4 +2,24 @@ DRIFTER TRANSPORT
 
 Producer - no interface, just tells route to make drifter at $Point. Drifter drifts.
 
-Consumer - two methods.
+Consumer - two options.
+          a) Have one method:
+               quantity accept(Resource,quantity available)
+             which is called by the drifter to let it consume some (or all with a maximum of 'available') of transported 'Resource' and return how much of the resource it has accepted
+             A Drifter can have infinite available (some large value) to make it never expire. It can also offer less to the consumer than it actually has available
+          b) 2 methods 1 to ask if can consume and another to then consume
+I like (a)
+
+WALKER TRANSPORT
+
+Producer - produces walkers
+   has to know what consumers are in range and if they are accepting for each product we produce
+   Also has to know the route to each consumer. It may be possible to have more than one route so this needs to have some logic for deciding.
+
+
+Consumer - consumer the resources
+  has to know what producers are in range and tell them if they are accepting or not
+
+If a walkers route or destination means it can no-longer deliver make it distruct.
+
+
