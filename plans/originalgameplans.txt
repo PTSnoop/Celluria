@@ -1,0 +1,34 @@
+CELL CITY BUILDER STRATEGY GAME THING DESIGN - ORIGINAL PUB SKETCH
+PROVISIONAL TITLE: CELLURIA
+
+City Wars
+- combined city-building / strategy game
+- can create cities at main base, predefined layout designed throughout game
+- buildings.
+
+Now: Cells!
+
+- buildings = organelles
+- active transport -roads
+- also O2, energy - short-range, diffusive
+- organelles can do different things
+- food -> energy (different types of food)
+- O2 <-> transport O2
+- attacks - chemical, viruses, brute force, eat them
+- switches, sensors
+- Chemicals - production, release
+- Defence - membrane, wall things
+- Repair
+- Movement, vision, manouvering, other rts-ish things
+- In-cell improvement (not changes though), a la Age of Empires blacksmith
+
+research mechanic - collect mutations from map
+    - develops up new buildings from old ones
+    - can also acquire upgrades from eating others, etc.
+
+Electric weapons - only ranged thing.
+
+Organelles are stochastic!
+
+Underlying current / random drifting motion.
+Multiple maps!
