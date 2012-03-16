@@ -1,0 +1,1 @@
+The big overarching irrlicht device, handling the player frontend. Delegates a lot.

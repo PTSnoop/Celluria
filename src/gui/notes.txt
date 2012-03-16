@@ -1,1 +1,1 @@
-We'll come back to this one later.
+The gui scope, including the main irrlicht device.
