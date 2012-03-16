@@ -28,3 +28,18 @@ Transport -> CarrierProtein (walker)
           -> Drifter
 
 Resource (basically just an enum)
+
+GUI SCOPE
+
+Game { all the irrlicht things }
+
+IrrlichtReceiver { plugs straight into IrrlichtDevice, delegates all event handling to the currently active Gooey }
+
+View -> CellView
+     -> WorldView -> GlobalMap
+     -> Gooey -
+              -> MainMenuGooey
+              -> CellGooey
+              -> WorldGooey
+
+TexturePack

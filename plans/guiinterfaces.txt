@@ -1,0 +1,32 @@
+GUI INTERFACES
+
+Game {  }
+
+IrrlichtReceiver { plugs straight into IrrlichtDevice, delegates all event handling to the currently active Gooey }
+
+View {
+    draw
+    handleMouseClick
+}
+
+CellView
+
+WorldView
+
+GlobalMap
+
+Gooey ( View ) {
+    onEvent
+}
+
+MainMenuGooey
+
+CellGooey
+
+WorldGooey
+
+
+TexturePack {
+    getTexture
+    getColour
+}
