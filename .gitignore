@@ -2,3 +2,7 @@
 *.[oa]
 # Ignore backupt files
 *~
+build/
+depends/
+depends.d
+source.mk

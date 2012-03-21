@@ -7,8 +7,8 @@ namespace game{
 
   class DrifterConsumer{
     public:
-      Quantity accept(Resource resource,Quantity quantity)=0;
-  }
+      virtual Quantity accept(Resource resource,Quantity quantity)=0;
+  };
   
 }
 
