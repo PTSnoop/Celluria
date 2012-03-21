@@ -16,7 +16,6 @@ Producer - produces walkers
    has to know what consumers are in range and if they are accepting for each product we produce
    Also has to know the route to each consumer. It may be possible to have more than one route so this needs to have some logic for deciding.
 
-
 Consumer - consumer the resources
   has to know what producers are in range and tell them if they are accepting or not
 
