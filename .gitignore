@@ -1,0 +1,4 @@
+# Ignore compiled code
+*.[oa]
+# Ignore backupt files
+*~
