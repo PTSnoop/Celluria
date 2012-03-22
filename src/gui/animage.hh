@@ -1,4 +1,4 @@
-#include <irrlicht.h>
+#include <irrlicht/irrlicht.h>
 
 void anImage(
 irr::video::IVideoDriver* driver, 
