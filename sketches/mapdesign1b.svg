@@ -14,7 +14,7 @@
    height="768"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.48.1 r9760"
    sodipodi:docname="mapdesign1b.svg">
   <defs
      id="defs4">
@@ -73,9 +73,9 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1280"
-     inkscape:window-height="748"
-     inkscape:window-x="-8"
-     inkscape:window-y="22"
+     inkscape:window-height="753"
+     inkscape:window-x="-2"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -91,7 +91,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -323,7 +323,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Asap;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"
        x="40.305088"
        y="591.22333"
        id="text4959"
@@ -344,13 +344,14 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot5153"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Asap;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"><flowRegion
          id="flowRegion5155"><rect
            id="rect5157"
            width="354.96759"
            height="254.55844"
            x="325.2691"
-           y="554.45374" /></flowRegion><flowPara
+           y="554.45374"
+           style="-inkscape-font-specification:Asap;font-family:Asap;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal" /></flowRegion><flowPara
          id="flowPara5159" /></flowRoot>    <rect
        style="fill:#00ff00;fill-opacity:1;stroke:none"
        id="rect5161"
@@ -1186,7 +1187,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Asap;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"
        x="321.5"
        y="664"
        id="text7676"
@@ -1205,7 +1206,7 @@
        y="925.12225" />
     <text
        xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Asap;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"
        x="324"
        y="941.86218"
        id="text7680"
@@ -1219,13 +1220,13 @@
        id="text7686"
        y="941.86218"
        x="716.16113"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Asap;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"
        xml:space="preserve"><tspan
          y="941.86218"
          x="716.16113"
          id="tspan7688"
          sodipodi:role="line"
-         style="text-align:end;text-anchor:end">Cost: 33240</tspan></text>
+         style="text-align:end;text-anchor:end;-inkscape-font-specification:Asap;font-family:Asap;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Cost: 33240</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect7692"
@@ -2908,7 +2909,7 @@
          rx="0"
          ry="0" />
       <rect
-         style="fill:#fffc93;fill-opacity:1;stroke:#474747;stroke-width:0.99999994;stroke-opacity:1"
+         style="fill:#fffc93;fill-opacity:1;stroke:#474747;stroke-width:0.99999994000000003;stroke-opacity:1"
          id="rect3933"
          width="64"
          height="64"

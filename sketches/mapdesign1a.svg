@@ -946,7 +946,7 @@
          rx="0"
          ry="0" />
       <rect
-         style="fill:#fffc93;fill-opacity:1;stroke:#474747;stroke-width:0.99999994;stroke-opacity:1"
+         style="fill:#fffc93;fill-opacity:1;stroke:#474747;stroke-width:0.99999994000000003;stroke-opacity:1"
          id="rect3933-6"
          width="64"
          height="64"
@@ -7064,7 +7064,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Asap;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"
        x="40.305088"
        y="591.22333"
        id="text4959"
@@ -7902,7 +7902,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Asap;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"
        x="321.5"
        y="664"
        id="text7676"
@@ -7921,7 +7921,7 @@
        y="925.12225" />
     <text
        xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Asap;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"
        x="324"
        y="941.86218"
        id="text7680"
@@ -7935,13 +7935,13 @@
        id="text7686"
        y="941.86218"
        x="716.16113"
-       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Asap;-inkscape-font-specification:Asap;font-stretch:normal;font-variant:normal"
        xml:space="preserve"><tspan
          y="941.86218"
          x="716.16113"
          id="tspan7688"
          sodipodi:role="line"
-         style="text-align:end;text-anchor:end">Cost: 33240</tspan></text>
+         style="text-align:end;text-anchor:end;-inkscape-font-specification:Asap;font-family:Asap;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Cost: 33240</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect7692"
