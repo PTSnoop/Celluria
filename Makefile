@@ -8,7 +8,7 @@ textures: svg
 	python maketextures.py
 
 source.mk:src
-	rm -r depends
+	rm -rf depends
 	mkdir depends
 	(cd src;find -type f -name '*.cc'|awk '{print "build: build/" substr($$0,3,length($$0)-4) "o" "\ndepends.d: depends/"substr($$0,3,length($$0)-4) "d"}') > $@
 
