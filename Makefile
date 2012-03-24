@@ -19,7 +19,7 @@ depends/%.d:src/%.cc
 	mkdir -p `dirname $@`
 	g++ -M $< -I src> $@
 
-main: build/gui/main.o build/gui/game/irrlichtdriver.o
+main: build/gui/main.o build/gui/driver/irrlichtdriver.o build/gui/driver/texturepack.o build/gui/driver/painter.o
 	g++ -lIrrlicht -o main $^ 
 
 build: build/cell/transport/walker.o

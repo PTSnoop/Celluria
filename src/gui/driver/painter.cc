@@ -1,7 +1,31 @@
-#include "animage.hh"
+#include "painter.hh"
 
-void anImage(
-irr::video::IVideoDriver* driver, 
+namespace game {
+
+Painter::Painter(video::IVideoDriver* ddriver, TexturePack* ttexpack) {
+    driver = ddriver;
+    texpack = ttexpack;
+}
+
+void Painter::setTexturePack(TexturePack* ttexpack) {
+    texpack = ttexpack;
+}
+
+
+void Painter::anImage(
+string texture, 
+irr::core::position2d<irr::s32> position, 
+irr::f32 rotation, 
+irr::core::vector2df scale, 
+irr::core::position2d<irr::s32> offset,
+irr::core::rect<irr::s32> sourceRect,
+bool useAlphaChannel,
+irr::video::SColor colour) 
+{
+    anImage(texpack->getTexture(texture),position,rotation,scale,offset,sourceRect,useAlphaChannel,colour);
+}
+
+void Painter::anImage(
 irr::video::ITexture* texture, 
 irr::core::position2d<irr::s32> position, 
 irr::f32 rotation, 
@@ -37,8 +61,17 @@ irr::video::SColor colour)
 //    }
 }
 
-void anImage(
-irr::video::IVideoDriver* driver, 
+void Painter::anImage(
+string texture, 
+irr::core::position2d<irr::s32> position, 
+irr::f32 rotation, 
+irr::core::vector2df scale, 
+irr::core::position2d<irr::s32> offset
+) {
+    anImage(texpack->getTexture(texture),position,rotation,scale,offset);
+}
+
+void Painter::anImage(
 irr::video::ITexture* texture, 
 irr::core::position2d<irr::s32> position, 
 irr::f32 rotation, 
@@ -48,7 +81,6 @@ irr::core::position2d<irr::s32> offset
     irr::core::dimension2d<irr::u32> texsize = texture->getSize();
     irr::core::rect<irr::s32> sourceRect = irr::core::rect<irr::s32>(0,0,texsize.Width,texsize.Height);
     anImage(
-        driver, 
         texture, 
         position, 
         rotation, 
@@ -60,7 +92,7 @@ irr::core::position2d<irr::s32> offset
     );
 };
 
-void draw2DImage(irr::video::IVideoDriver *driver, irr::video::ITexture* texture, irr::core::rect<irr::s32> sourceRect, irr::core::position2d<irr::s32> position, irr::core::position2d<irr::s32> rotationPoint, irr::f32 rotation, irr::core::vector2df scale, bool useAlphaChannel, irr::video::SColor color) {
+void Painter::draw2DImage(irr::video::IVideoDriver *driver, irr::video::ITexture* texture, irr::core::rect<irr::s32> sourceRect, irr::core::position2d<irr::s32> position, irr::core::position2d<irr::s32> rotationPoint, irr::f32 rotation, irr::core::vector2df scale, bool useAlphaChannel, irr::video::SColor color) {
  
         // Store and clear the projection matrix
         irr::core::matrix4 oldProjMat = driver->getTransform(irr::video::ETS_PROJECTION);
@@ -142,4 +174,5 @@ void draw2DImage(irr::video::IVideoDriver *driver, irr::video::ITexture* texture
         driver->setTransform(irr::video::ETS_VIEW,oldViewMat);
         driver->setTransform(irr::video::ETS_WORLD,oldWorldMat);
 }
- 
+
+} 

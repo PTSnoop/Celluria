@@ -4,10 +4,15 @@ int main() {
     
     IrrlichtDriver * irrdriver = new IrrlichtDriver;
 
-    int i = 0;
+    TexturePack * texpack = new TexturePack;
+    texpack->addTexture("clawbutton", irrdriver->driver->getTexture("textures/cell/unity/buttons/claw.png"));
+
+    Painter * painter = new Painter (irrdriver->driver,texpack);
+
     while (irrdriver->run()) {
-        cout << i << endl;
-        i++;
+        irrdriver->beginScene();
+        painter->anImage("clawbutton",core::position2d<irr::s32>(10,10));
+        irrdriver->endScene();
     }
     return 0;
 }

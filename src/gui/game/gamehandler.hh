@@ -1,7 +1,7 @@
 #include "irrlicht/irrlicht.h"
 
-#include "irrlichtreceiver.hh"
-#include "texturepack.hh"
+#include "../driver/irrlichtreceiver.hh"
+#include "../driver/texturepack.hh"
 
 #ifndef GAMEHANDLER_HH
 #define GAMEHANDLER_HH
