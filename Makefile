@@ -19,6 +19,9 @@ depends/%.d:src/%.cc
 	mkdir -p `dirname $@`
 	g++ -M $< -I src> $@
 
+main: build/gui/main.o build/gui/game/irrlichtdriver.o
+	g++ -lIrrlicht -o main $^ 
+
 build: build/cell/transport/walker.o
 	g++ -o test $< 
 
