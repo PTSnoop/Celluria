@@ -10,7 +10,7 @@ namespace game{
 
   class GameHandler {
   public:
-    GameHandler::GameHandler ();
+    GameHandler ();
     void load();
     void update();
     void draw();

@@ -1,6 +1,7 @@
 #include "irrlicht/irrlicht.h"
 #include <map>
 #include <string>
+using namespace std;
 
 #ifndef TEXTUREPACK_HH
 #define TEXTUREPACK_HH
@@ -13,13 +14,13 @@ namespace game {
   public:
     video::ITexture* getTexture ( string ) ;
     video::SColorf* getColour ( string ) ;
-    void addTexture ( string , ITexture* ) ;
-    void addColour ( string , SColorf* ) ;
+    void addTexture ( string , video::ITexture* ) ;
+    void addColour ( string , video::SColorf* ) ;
     void readFile ( string ) ;
     
   private:
-    map< string ; video::ITexture* > textureBank ;
-    map< string ; video::SColorf* > colourBank ;
+    map< string , video::ITexture* > textureBank ;
+    map< string , video::SColorf* > colourBank ;
   };
 
 }
