@@ -6,7 +6,10 @@ src/cell - cell-building scope.
 src/cell/organelle - buildings and routes.
 src/cell/transport - walkers, drifters, interfaces.
 
-src/gui - we'll come back to this one later.
+src/gui - gui scope.
+src/gui/game - things that plug into the main irrlicht window.
+src/gui/view - things drawn onto the screen.
+src/gui/view/gooey - things with buttons that can be clicked on.
 
 src/world - strategy scope.
 src/world/entity - all entities except scenery.

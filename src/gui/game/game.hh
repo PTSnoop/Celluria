@@ -1,9 +1,12 @@
 #include "irrlicht/irrlicht.h"
 
+#include <vector>
+using namespace std;
+
 #include "irrlichtreceiver.hh"
 #include "texturepack.hh"
 
-#include "cell.hh"
+#include "gooey.hh"
 #include "world.hh"
 
 #ifndef GAME_HH
@@ -13,17 +16,15 @@ namespace game{
 
   class Game {
   public:
-    Game::Game ();
-    void load();
-    void update();
+    virtual Game::Game () =0;
+    virtual void load() =0;
+    virtual void update() =0;
+    virtual void draw() =0;
     IrrlichtReceiver* receiver ;
 
   private:
-    Cell* cell ;
-    World* cell ;
-    CellGooey* cellFace ;
-    WorldGooey* worldFace ;
-    MainMenuGooey* mainMenuFace ;
+    World* world ;
+    vector<Gooey*> gooeySet ;
     TexturePack* texPack ;
   };
 
