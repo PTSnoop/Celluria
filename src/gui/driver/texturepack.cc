@@ -2,6 +2,14 @@
 
 namespace game {
 
+    TexturePack::TexturePack (IrrlichtDriver* irrlichtdriver) {
+        irrdriver = irrlichtdriver;
+    }
+
+    void TexturePack::addTexture(string texname, string intexture) {
+        textureBank.insert( pair<string,video::ITexture*>(texname,irrdriver->driver->getTexture(intexture.c_str())) );
+    }
+
     void TexturePack::addTexture(string texname, video::ITexture* intexture) {
         textureBank.insert( pair<string,video::ITexture*>(texname,intexture) );
     }

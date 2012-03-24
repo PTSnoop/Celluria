@@ -4,8 +4,9 @@ int main() {
     
     IrrlichtDriver * irrdriver = new IrrlichtDriver;
 
-    TexturePack * texpack = new TexturePack;
-    texpack->addTexture("clawbutton", irrdriver->driver->getTexture("textures/cell/unity/buttons/claw.png"));
+    TexturePack * texpack = new TexturePack(irrdriver);
+//    texpack->addTexture("clawbutton", irrdriver->driver->getTexture("textures/cell/unity/buttons/claw.png"));
+    texpack->addTexture("clawbutton", "textures/cell/unity/buttons/claw.png");
 
     Painter * painter = new Painter (irrdriver->driver,texpack);
 
