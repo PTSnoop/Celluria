@@ -35,10 +35,12 @@ namespace game { // everything goes inside a big global namespace, called "game"
 
   VOTES
     Actual tab tabs: 2
-    Two spaces:      0
-    Four spaces:     0
+    Two spaces:      0.5
+    Four spaces:     0.5
+
 
   VOTED SO FAR:
     PTSnoop
     Bloodlust80 (General Bloodlust)
+    staircase27 I really don't like actual tabs for some reason! but don't mind how many spaces! :P
 */
