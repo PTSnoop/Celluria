@@ -40,4 +40,5 @@ namespace game { // everything goes inside a big global namespace, called "game"
 
   VOTED SO FAR:
     PTSnoop
+    Bloodlust80 (General Bloodlust)
 */
