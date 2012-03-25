@@ -1,6 +1,43 @@
-If you can access the git repo, post your name here.
+//  CODE STYLE
+//  - just making sure we're agreed on all this.
 
-PTSnoop
-JetKnight
-staircase27
-Bloodlust80
+#include <things.h>
+
+#define M_PI 3.141592 // global constants (like pi) in all caps, with underscores.
+
+namespace game { // everything goes inside a big global namespace, called "game".
+
+    class ClassName { // class names are capitalised, in CamelCase. 
+    public:
+        // functions and members start with a small letter, in camelCase.
+        void draw (float) ;
+        void drawSomethingElse (float) ;
+        float parameter ;
+
+    private:
+        float somethingCompletelyDifferent ;
+    }
+
+    void ClassName::draw (float thing) { // curly brackets in line with the thing they're attached to.
+        if (thing > 0.5) {
+            cout << "Hello world!" << endl;
+        } else { // How should we do else curly brackets? I (PTSnoop) prefer this way...
+            cout << "Are you still there?..." << endl;
+        }
+    }
+
+}
+
+/*
+  Something we've not decided on: indentation.
+  So far, Simon's been using two spaces; I (PTSnoop)'ve tended to use four.
+  We should decide on something...
+
+  VOTES
+    Actual tab tabs: 1
+    Two spaces:      0
+    Four spaces:     0
+
+  VOTED SO FAR:
+    PTSnoop
+*/
