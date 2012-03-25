@@ -34,7 +34,7 @@ namespace game { // everything goes inside a big global namespace, called "game"
   We should decide on something...
 
   VOTES
-    Actual tab tabs: 1
+    Actual tab tabs: 2
     Two spaces:      0
     Four spaces:     0
 
