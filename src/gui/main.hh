@@ -5,8 +5,8 @@ using namespace std;
 
 #include "game/gamehandler.hh"
 #include "driver/irrlichtdriver.hh"
-#include "driver/painter.hh"
 #include "driver/texturepack.hh"
+#include "driver/texturecard.hh"
 
 #ifndef MAIN_HH
 #define MAIN_HH

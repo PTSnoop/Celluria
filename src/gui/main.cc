@@ -8,11 +8,19 @@ int main() {
 //    texpack->addTexture("clawbutton", irrdriver->driver->getTexture("textures/cell/unity/buttons/claw.png"));
     texpack->addTexture("clawbutton", "textures/cell/unity/buttons/claw.png");
 
-    Painter * painter = new Painter (irrdriver->driver,texpack);
 
+    TextureCard * clawtex = new TextureCard(irrdriver->driver,"textures/cell/unity/buttons/claw.png");
+    clawtex->setPosition( core::position2d<s32>(48,48) );
+
+    float r = 0;
     while (irrdriver->run()) {
+        
+        r += 0.001;        
+
         irrdriver->beginScene();
-        painter->anImage("clawbutton",core::position2d<irr::s32>(10,10));
+
+        clawtex->draw();
+
         irrdriver->endScene();
     }
     return 0;

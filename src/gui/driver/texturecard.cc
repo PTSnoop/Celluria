@@ -1,16 +1,129 @@
-#include "painter.hh"
+#include "texturecard.hh"
 
 namespace game {
 
-Painter::Painter(video::IVideoDriver* ddriver, TexturePack* ttexpack) {
+void TextureCard::defaults(video::ITexture* ttexture) {
+    texture = ttexture;
+    position = core::position2d<s32>(0,0);
+    rotation = 0;
+    scale = core::vector2df(1,1);
+    origin = core::position2d<s32>(0,0);
+    core::dimension2d<u32> texsize = ttexture->getSize();
+    sourceRect = core::rect<s32>(0,0,texsize.Width,texsize.Height);
+    useAlpha = true;
+    colour = video::SColor(255,255,255,255);
+}
+
+TextureCard::TextureCard(video::IVideoDriver* ddriver,video::ITexture* ttexture) {
     driver = ddriver;
-    texpack = ttexpack;
+    texture = ttexture;
+    defaults(ttexture);
 }
 
-void Painter::setTexturePack(TexturePack* ttexpack) {
-    texpack = ttexpack;
+TextureCard::TextureCard(video::IVideoDriver* ddriver, string ttexname) {
+    driver = ddriver;
+    texture = driver->getTexture(ttexname.c_str());
+    defaults(texture);
 }
 
+TextureCard::TextureCard(video::IVideoDriver* ddriver,video::ITexture* ttexture,core::rect<s32> pos) {
+    driver = ddriver;
+    texture = ttexture;
+    defaults(ttexture);
+    setSourceRect(pos);
+}
+
+TextureCard::TextureCard(video::IVideoDriver* ddriver, string ttexname, core::rect<s32> pos) {
+    driver = ddriver;
+    texture = driver->getTexture(ttexname.c_str());
+    defaults(texture);
+    setSourceRect(pos);
+}
+
+void TextureCard::setDriver(video::IVideoDriver* ddriver) {
+    driver = ddriver;
+}
+
+void TextureCard::setTexture(video::ITexture* ttexture) {
+    texture = ttexture;
+}
+
+void TextureCard::setTexture(string ttexname) {
+    texture = driver->getTexture(ttexname.c_str());
+}
+
+void TextureCard::setPosition(core::position2d<s32> pposition) {
+    position = pposition;
+}
+
+void TextureCard::setRotation(float rrotation) {
+    rotation = rrotation;
+}
+
+void TextureCard::setScale(core::vector2df sscale) {
+    scale = sscale;
+}
+
+void TextureCard::setOrigin(core::position2d<s32> oorigin) {
+    origin = oorigin;
+}
+
+void TextureCard::setSourceRect(core::rect<s32> ssourceRect) {
+    sourceRect = ssourceRect;
+}
+
+void TextureCard::setUseAlpha(bool uuseAlpha) {
+    useAlpha = uuseAlpha;
+}
+
+void TextureCard::setColour(video::SColor ccolour) {
+    colour = ccolour;
+}
+
+void TextureCard::draw() {
+    draw2DImage(
+            driver, 
+            texture, 
+            sourceRect, 
+            position-origin, 
+            position, 
+            -rotation * (180.0/M_PI), 
+            scale, 
+            useAlpha, 
+            colour);
+}
+
+void TextureCard::draw(core::position2d<s32> pos) {
+    setPosition(pos);
+    draw2DImage(
+            driver, 
+            texture, 
+            sourceRect, 
+            position-origin, 
+            position, 
+            -rotation * (180.0/M_PI), 
+            scale, 
+            useAlpha, 
+            colour
+    );
+}
+
+void TextureCard::draw(core::position2d<s32> pos, float rot) {
+    setPosition(pos);
+    setRotation(rot);
+    draw2DImage(
+            driver, 
+            texture, 
+            sourceRect, 
+            position-origin, 
+            position, 
+            -rotation * (180.0/M_PI), 
+            scale, 
+            useAlpha, 
+            colour
+    );
+}
+/*
 
 void Painter::anImage(
 string texture, 
@@ -35,7 +148,7 @@ irr::core::rect<irr::s32> sourceRect,
 bool useAlphaChannel,
 irr::video::SColor colour) 
 {
-/*
+
     if (rotation < 0.01 and rotation > -0.01) {
         driver->draw2DImage (
             texture, 
@@ -47,13 +160,12 @@ irr::video::SColor colour)
         ); // doesn't scale yet - fix this
 
     } else {
-*/
         draw2DImage(
             driver, 
             texture, 
             sourceRect, 
+            position-offset, 
             position, 
-            position+offset, 
             -rotation * (180.0/M_PI), 
             scale, 
             useAlphaChannel, 
@@ -91,8 +203,8 @@ irr::core::position2d<irr::s32> offset
         irr::video::SColor(255,255,255,255)
     );
 };
-
-void Painter::draw2DImage(irr::video::IVideoDriver *driver, irr::video::ITexture* texture, irr::core::rect<irr::s32> sourceRect, irr::core::position2d<irr::s32> position, irr::core::position2d<irr::s32> rotationPoint, irr::f32 rotation, irr::core::vector2df scale, bool useAlphaChannel, irr::video::SColor color) {
+*/
+void TextureCard::draw2DImage(irr::video::IVideoDriver *driver, irr::video::ITexture* texture, irr::core::rect<irr::s32> sourceRect, irr::core::position2d<irr::s32> position, irr::core::position2d<irr::s32> rotationPoint, irr::f32 rotation, irr::core::vector2df scale, bool useAlphaChannel, irr::video::SColor color) {
  
         // Store and clear the projection matrix
         irr::core::matrix4 oldProjMat = driver->getTransform(irr::video::ETS_PROJECTION);
