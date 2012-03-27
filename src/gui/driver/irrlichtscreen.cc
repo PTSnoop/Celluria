@@ -1,8 +1,8 @@
-#include "irrlichtdriver.hh"
+#include "irrlichtscreen.hh"
 
 namespace game {
 
-    void IrrlichtDriver::setResolution(int xres,int yres) {
+    void IrrlichtScreen::setResolution(int xres,int yres) {
         if (xres == 0) { // automatically find screen resolution
 
             // create temporary device
@@ -22,13 +22,13 @@ namespace game {
 //        device->setEventReceiver(&receiver);
 //    }
 
-    IrrlichtDriver::IrrlichtDriver() {
+    IrrlichtScreen::IrrlichtScreen() {
         setResolution(1024,768);
 //        receiver = new IrrlichtReceiver();
 //        setEventReceiver(receiver);
     }
 
-    bool IrrlichtDriver::run() {
+    bool IrrlichtScreen::run() {
         if (!driver)
             return false;
         if (!device->run())
@@ -37,11 +37,11 @@ namespace game {
         return true;
     }
 
-    void IrrlichtDriver::beginScene() {
+    void IrrlichtScreen::beginScene() {
         driver->beginScene(true, true, video::SColor(0,0,0,0));
     }
 
-    void IrrlichtDriver::endScene() {
+    void IrrlichtScreen::endScene() {
         driver->endScene();
     }
 

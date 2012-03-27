@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-#include "irrlichtdriver.hh"
+#include "irrlichtscreen.hh"
 
 #ifndef TEXTUREPACK_HH
 #define TEXTUREPACK_HH
@@ -14,7 +14,7 @@ namespace game {
 
   class TexturePack {
   public:
-    TexturePack( IrrlichtDriver* );
+    TexturePack( IrrlichtScreen* );
     video::ITexture* getTexture ( string ) ;
     video::SColorf* getColour ( string ) ;
     void addTexture ( string , string ) ;
@@ -23,7 +23,7 @@ namespace game {
     void readFile ( string ) ;
     
   private:
-    IrrlichtDriver* irrdriver;
+    IrrlichtScreen* irrscreen;
     map< string , video::ITexture* > textureBank ;
     map< string , video::SColorf* > colourBank ;
   };

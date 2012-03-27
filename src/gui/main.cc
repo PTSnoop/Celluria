@@ -2,26 +2,25 @@
 
 int main() {
     
-    IrrlichtDriver * irrdriver = new IrrlichtDriver;
+    IrrlichtScreen * irrscreen = new IrrlichtScreen;
 
-    TexturePack * texpack = new TexturePack(irrdriver);
-//    texpack->addTexture("clawbutton", irrdriver->driver->getTexture("textures/cell/unity/buttons/claw.png"));
+    TexturePack * texpack = new TexturePack(irrscreen);
     texpack->addTexture("clawbutton", "textures/cell/unity/buttons/claw.png");
 
 
-    TextureCard * clawtex = new TextureCard(irrdriver->driver,"textures/cell/unity/buttons/claw.png");
+    TextureCard * clawtex = new TextureCard(irrscreen->driver,"textures/cell/unity/buttons/claw.png");
     clawtex->setPosition( core::position2d<s32>(48,48) );
 
     float r = 0;
-    while (irrdriver->run()) {
+    while (irrscreen->run()) {
         
         r += 0.001;        
 
-        irrdriver->beginScene();
+        irrscreen->beginScene();
 
         clawtex->draw();
 
-        irrdriver->endScene();
+        irrscreen->endScene();
     }
     return 0;
 }

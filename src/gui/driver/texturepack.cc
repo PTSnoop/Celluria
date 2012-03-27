@@ -2,12 +2,12 @@
 
 namespace game {
 
-    TexturePack::TexturePack (IrrlichtDriver* irrlichtdriver) {
-        irrdriver = irrlichtdriver;
+    TexturePack::TexturePack (IrrlichtScreen* irrlichtscreen) {
+        irrscreen = irrlichtscreen;
     }
 
     void TexturePack::addTexture(string texname, string intexture) {
-        textureBank.insert( pair<string,video::ITexture*>(texname,irrdriver->driver->getTexture(intexture.c_str())) );
+        textureBank.insert( pair<string,video::ITexture*>(texname,irrscreen->driver->getTexture(intexture.c_str())) );
     }
 
     void TexturePack::addTexture(string texname, video::ITexture* intexture) {

@@ -4,7 +4,7 @@
 using namespace std;
 
 #include "game/gamehandler.hh"
-#include "driver/irrlichtdriver.hh"
+#include "driver/irrlichtscreen.hh"
 #include "driver/texturepack.hh"
 #include "driver/texturecard.hh"
 

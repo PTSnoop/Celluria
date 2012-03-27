@@ -3,13 +3,13 @@ using namespace irr;
 
 //#include "irrlichtreceiver.hh"
 
-#ifndef IRRLICHTDRIER_HH
-#define IRRLICHTDRIER_HH
+#ifndef IRRLICHTSCREEN_HH
+#define IRRLICHTSCREEN_HH
 
 namespace game {
-  class IrrlichtDriver {
+  class IrrlichtScreen {
   public:
-    IrrlichtDriver();
+    IrrlichtScreen();
     IrrlichtDevice* device;
     video::IVideoDriver* driver;
     void setResolution(int,int);
