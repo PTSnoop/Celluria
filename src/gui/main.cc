@@ -7,9 +7,11 @@ int main() {
     TexturePack * texpack = new TexturePack(irrscreen);
     texpack->addTexture("clawbutton", "textures/cell/unity/buttons/claw.png");
 
+    TextureCard* clawtex = texpack->getCard("clawbutton");
+    TextureCard* clawtex2 = texpack->getCard("clawbutton");
 
-    TextureCard * clawtex = new TextureCard(irrscreen->driver,"textures/cell/unity/buttons/claw.png");
     clawtex->setPosition( core::position2d<s32>(48,48) );
+    clawtex2->setPosition( core::position2d<s32>(148,148) );
 
     float r = 0;
     while (irrscreen->run()) {
@@ -19,6 +21,7 @@ int main() {
         irrscreen->beginScene();
 
         clawtex->draw();
+        clawtex2->draw();
 
         irrscreen->endScene();
     }

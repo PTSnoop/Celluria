@@ -4,6 +4,8 @@ using namespace irr;
 #include <string>
 using namespace std;
 
+#ifndef TEXTURECARD_HH
+#define TEXTURECARD_HH
 
 namespace game {
 
@@ -89,3 +91,4 @@ namespace game {
     };
 }
 
+#endif
