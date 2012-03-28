@@ -13,11 +13,11 @@ namespace game {
     IrrlichtDevice* device;
     video::IVideoDriver* driver;
     void setResolution(int,int);
-    void setEventReceiver(AyEventReceiver*);
+    void setEventReceiver(IrrlichtReceiver*);
     bool run();
     void beginScene();
     void endScene();
-    AyEventReceiver* receiver;
+    IrrlichtReceiver* receiver;
   };
 }
 

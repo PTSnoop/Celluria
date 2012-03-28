@@ -15,21 +15,21 @@ namespace game {
 //	  IrrlichtScreen* screen;
 //  }
 
-	struct SMouseState {
-		core::position2di Position;
-		bool LeftButtonDown;
-		SMouseState() : LeftButtonDown(false) { };
+	struct MouseState {
+		core::position2di position;
+		bool leftButtonDown;
+		MouseState() : leftButtonDown(false) { };
 	} ;
 
-	class AyEventReceiver : public IEventReceiver {
+	class IrrlichtReceiver : public IEventReceiver {
 	public:
-		SMouseState MouseState;
+		MouseState mouse;
 		virtual bool OnEvent(const SEvent&);
-		const SEvent::SJoystickEvent & GetJoystickState(void) const;
-		const SMouseState & GetMouseState(void) const;
-		AyEventReceiver();
+		const SEvent::SJoystickEvent & getJoystickState(void) const;
+		const MouseState & getMouseState(void) const;
+		IrrlichtReceiver();
 	private:
-		SEvent::SJoystickEvent JoystickState;
+		SEvent::SJoystickEvent joystick;
 	};
 
 }
