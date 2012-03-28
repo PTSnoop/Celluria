@@ -11,7 +11,7 @@ int main() {
     TextureCard* clawtex2 = texpack->getCard("clawbutton");
 
     clawtex->setPosition( core::position2d<s32>(48,48) );
-    clawtex2->setPosition( core::position2d<s32>(148,148) );
+    clawtex2->setPosition( core::position2d<s32>(148,48) );
 
     float r = 0;
     while (irrscreen->run()) {
@@ -20,10 +20,13 @@ int main() {
 
         irrscreen->beginScene();
 
-        clawtex->draw();
+        clawtex->draw(core::position2d<s32>(48,48));
 		
 		if (irrscreen->receiver->mouse.leftButtonDown)
-			clawtex2->draw();
+			clawtex->draw(core::position2d<s32>(148,48));
+		
+		if (irrscreen->receiver->IsKeyDown(KEY_SPACE))
+			clawtex->draw(core::position2d<s32>(248,48));
 
         irrscreen->endScene();
 

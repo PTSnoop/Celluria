@@ -24,31 +24,37 @@ namespace game {
                 break;
             }
         }
+        else if (event.EventType == irr::EET_KEY_INPUT_EVENT) {
+			KeyIsDown[event.KeyInput.Key] = event.KeyInput.PressedDown;
+		}
         // The state of each connected joystick is sent to us
         // once every run() of the Irrlicht device.  Store the
         // state of the first joystick, ignoring other joysticks.
         // This is currently only supported on Windows and Linux.
-        if (event.EventType == irr::EET_JOYSTICK_INPUT_EVENT
+        else if (event.EventType == irr::EET_JOYSTICK_INPUT_EVENT
             && event.JoystickEvent.Joystick == 0)
         {
             joystick = event.JoystickEvent;
         }
         return false;
     }
+    
+	bool IrrlichtReceiver::IsKeyDown(EKEY_CODE keyCode) const {
+		return KeyIsDown[keyCode];
+	}
 
-    const SEvent::SJoystickEvent & IrrlichtReceiver::getJoystickState(void) const
-    {
+    const SEvent::SJoystickEvent & IrrlichtReceiver::getJoystickState(void) const {
         return joystick;
     }
 
-    const MouseState & IrrlichtReceiver::getMouseState(void) const
-    {
+    const MouseState & IrrlichtReceiver::getMouseState(void) const {
         return mouse;
     }
 
 
-    IrrlichtReceiver::IrrlichtReceiver()
-    {
+    IrrlichtReceiver::IrrlichtReceiver() {
+		for (u32 i=0; i<KEY_KEY_CODES_COUNT; ++i)
+			KeyIsDown[i] = false;
     }
     
 }

@@ -25,11 +25,13 @@ namespace game {
 	public:
 		MouseState mouse;
 		virtual bool OnEvent(const SEvent&);
+		virtual bool IsKeyDown(EKEY_CODE keyCode) const;
 		const SEvent::SJoystickEvent & getJoystickState(void) const;
 		const MouseState & getMouseState(void) const;
 		IrrlichtReceiver();
 	private:
 		SEvent::SJoystickEvent joystick;
+		bool KeyIsDown[KEY_KEY_CODES_COUNT];
 	};
 
 }
