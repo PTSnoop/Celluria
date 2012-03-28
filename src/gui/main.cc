@@ -22,10 +22,16 @@ int main() {
 
         clawtex->draw();
 		
-//		if (irrscreen->receiver->IsKeyDown(KEY_SPACE))
-//			clawtex2->draw();
+		if (irrscreen->receiver->mouse.leftButtonDown)
+			clawtex2->draw();
 
         irrscreen->endScene();
+
+        int fps = irrscreen->driver->getFPS();
+        core::stringw str = L"Celluria - FPS:";
+        str += irrscreen->driver->getFPS();
+        irrscreen->device->setWindowCaption(str.c_str());
+
     }
     return 0;
 }
