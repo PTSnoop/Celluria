@@ -21,7 +21,9 @@ int main() {
         irrscreen->beginScene();
 
         clawtex->draw();
-        clawtex2->draw();
+		
+//		if (irrscreen->receiver->IsKeyDown(KEY_SPACE))
+//			clawtex2->draw();
 
         irrscreen->endScene();
     }

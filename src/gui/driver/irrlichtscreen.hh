@@ -1,7 +1,7 @@
 #include <irrlicht/irrlicht.h>
 using namespace irr;
 
-//#include "irrlichtreceiver.hh"
+#include "irrlichtreceiver.hh"
 
 #ifndef IRRLICHTSCREEN_HH
 #define IRRLICHTSCREEN_HH
@@ -13,11 +13,11 @@ namespace game {
     IrrlichtDevice* device;
     video::IVideoDriver* driver;
     void setResolution(int,int);
-//    void setEventReceiver(IrrlichtReceiver);
+    void setEventReceiver(AyEventReceiver*);
     bool run();
     void beginScene();
     void endScene();
-//    IrrlichtReceiver receiver;
+    AyEventReceiver* receiver;
   };
 }
 

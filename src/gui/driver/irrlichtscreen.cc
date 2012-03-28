@@ -18,14 +18,17 @@ namespace game {
         }
     }
 
-//    void IrrlichtDriver::setEventReceiver(IrrlichtReceiver receiver) {
-//        device->setEventReceiver(&receiver);
-//    }
+    void IrrlichtScreen::setEventReceiver(AyEventReceiver* rreceiver) {
+        device->setEventReceiver(rreceiver);
+    }
 
     IrrlichtScreen::IrrlichtScreen() {
         setResolution(1024,768);
-//        receiver = new IrrlichtReceiver();
-//        setEventReceiver(receiver);
+		printf("new\n");
+		receiver = new AyEventReceiver;
+		printf("set\n");
+        device->setEventReceiver(receiver);
+		printf("setdone\n");
     }
 
     bool IrrlichtScreen::run() {
