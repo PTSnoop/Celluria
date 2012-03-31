@@ -1,6 +1,8 @@
 #include "main.hh"
 #include <vector>
 #include <cmath>
+#include <map>
+#include <sstream>
 using namespace std;
 
 class Wanderer {
@@ -47,13 +49,18 @@ void Wanderer::update(int newupdate) {
 	}
 }
 
+enum State { LOAD, COLLECT, PUSH, DRAW, DEAD };
+
 struct SharedData {
-	vector<int> commandtrack1;
-	vector<int> commandtrack2;
+	map<int,int> commandtrack1;
+	map<int,int> commandtrack2;
 	bool loaded;
 	bool connected;
 	int now;
 	int begin;
+	int push1;
+	int push2;
+	State state;
 };
 
 int main() {
@@ -62,28 +69,33 @@ int main() {
 	sd.loaded = false;
 	sd.connected = false;
 	sd.now = 0;
+	sd.state = LOAD;
 	
-	/*
+	sd.commandtrack1[0] = 0;
+	sd.commandtrack1[1] = 0;
+	sd.commandtrack2[0] = 0;
+	sd.commandtrack2[1] = 0;
+	
+	
 #pragma omp parallel sections num_threads(2) shared(sd)
 {
 #pragma omp section
 	{
-		*/
 		TD::Socket sock;
 		char buffer [127];
 		bool server;
 		try {
-			sd.now = 5;
 			cout << "Trying to connect..." << endl;
 			sock.connect("localhost", 6666);
 			std::cout << "Connected to " << sock.getHostName() << std::endl;
 			server = false;
 		}
 		catch(int e) {
-			sd.now = 12;
-			cout << "No connection, hosting instead" << endl;
 			TD::Socket server;
+			cout << "No connection, hosting instead" << endl;
+			sleep(1);
 			server.bind(6666);
+			cout << "Listening for connections." << endl;
 			server.listen();		
 			sock = server.accept();
 			std::cout << "Connected to " << sock.getHostName() << std::endl;
@@ -91,18 +103,64 @@ int main() {
 			server = true;
 		}
 			
-		sprintf(buffer,"%d",sd.now);
-		sock.sendln(buffer);
-		cout << sock.recv() << endl;
-		sock.close();
-
-		
-		
-		
 		sd.connected = true;
-		/*
 		while (not sd.loaded)
 			sleep(1);
+		
+		int lastround = 0;
+		int thisround = 0;
+		
+		if (server) {
+			while (sd.state != DEAD) {
+				thisround = sd.now / 1000;
+				string recvish = sock.recvln();
+				cout << "<" << recvish << endl;
+				stringstream recvishish (recvish);
+				
+				int wround,w2;
+				recvishish >> wround;
+				recvishish >> w2;
+				
+				int w1 = sd.push1;
+				sd.push1 = 0;
+				
+				stringstream sendish;
+				sendish << wround << " " << w1 << " " << w2;
+				
+				cout << ">" << sendish.str() << endl;
+				sock.sendln(sendish.str().c_str());
+				sd.commandtrack1[wround] = w1;
+				sd.commandtrack2[wround] = w2;
+			}
+		}
+		else { // client
+			while (sd.state != DEAD) {
+				thisround = sd.now / 1000;
+				if (thisround != lastround) {
+					stringstream sendthing;
+					sendthing << thisround + 1 << " " << sd.push2;
+					sd.push2 = 0; 
+					cout << ">" << sendthing.str() << endl;
+					sock.sendln(sendthing.str().c_str());
+					
+					string recvthing = sock.recvln();
+					cout << "<" << recvthing << endl;
+					int vround, v1, v2;
+					
+					stringstream recvthingthing ( recvthing );
+					recvthingthing >> vround;
+					recvthingthing >> v1;
+					recvthingthing >> v2;
+					
+					sd.commandtrack1[vround] = v1;
+					sd.commandtrack2[vround] = v2;
+				}
+				lastround = thisround;
+
+			}
+		}
+		
+		sock.close();
 	}
 #pragma omp section
 	{
@@ -151,7 +209,6 @@ int main() {
 		
 		irrscreen->run();
 		sd.begin = irrscreen->device->getTimer()->getTime();
-		//cout << sd.begin << endl;
 		
 		//begin main loop!
 		while (irrscreen->run()) {
@@ -161,8 +218,8 @@ int main() {
 			//cout << sd.now << endl;
 			f32 dt = (f32)(sd.now - then) / 1000.f; // Time in seconds
 			then = sd.now;
-			int nowsec = sd.now/500;
-			int nowdelta = 2*( sd.now % 500);
+			int nowsec = sd.now/1000;
+			int nowdelta = (sd.now % 1000);
 			if (nowsec > oldsec) {
 				newround = true;
 			}
@@ -171,9 +228,13 @@ int main() {
 			}
 			oldsec = nowsec;
 			
+
+			
 			//RUN GAME SIM
 			
 			if (newround) {
+				onequeue += sd.commandtrack1[nowsec];
+				twoqueue += sd.commandtrack2[nowsec];
 				if (onequeue > 0) {
 					wanderers.push_back( new Wanderer (texpack,true) );
 					onequeue--;
@@ -218,8 +279,7 @@ int main() {
 			}
 			else {
 				if (lmwasdown) {
-					onequeue++;
-					printf("PING\n");
+					sd.push1++;
 				}
 				lmwasdown = false;
 			}
@@ -229,8 +289,7 @@ int main() {
 			}
 			else {
 				if (spacewasdown) {
-					twoqueue++;
-					printf("PANG\n");
+					sd.push2++;
 				}
 				spacewasdown = false;
 			}
@@ -269,10 +328,9 @@ int main() {
 			irrscreen->device->setWindowCaption(str.c_str());
 
 		}
+		sd.state = DEAD;
 	}
 }
-
-*/
 return 0;
 
 }

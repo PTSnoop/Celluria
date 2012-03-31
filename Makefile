@@ -22,6 +22,8 @@ depends/%.d:src/%.cc
 main: build/gui/main.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o
 	g++ -g -fopenmp -lIrrlicht -o main $^ 
 
+net: build/gui/main.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o
+
 run: main
 	./main
 

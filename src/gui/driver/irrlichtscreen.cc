@@ -23,7 +23,7 @@ namespace game {
     }
 
     IrrlichtScreen::IrrlichtScreen() {
-        setResolution(1024,768);
+        setResolution(1024,300);
 		receiver = new IrrlichtReceiver;
         device->setEventReceiver(receiver);
     }
