@@ -15,7 +15,7 @@
 	along with TDSocket.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "Socket.hpp"
+#include "Socket.hh"
 #include <iostream>
 
 /**

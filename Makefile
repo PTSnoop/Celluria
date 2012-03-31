@@ -19,8 +19,8 @@ depends/%.d:src/%.cc
 	mkdir -p `dirname $@`
 	g++ -g -M $< -I src> $@
 
-main: build/gui/main.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o
-	g++ -g -lIrrlicht -o main $^ 
+main: build/gui/main.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o
+	g++ -g -fopenmp -lIrrlicht -o main $^ 
 
 run: main
 	./main
@@ -30,7 +30,7 @@ build: build/cell/transport/walker.o
 
 build/%.o:src/%.cc
 	mkdir -p `dirname $@`
-	g++ -g -c -o $@ $< -I src
+	g++ -fopenmp -g -c -o $@ $< -I src
 
 include source.mk
 include depends.d
