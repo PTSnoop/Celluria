@@ -199,11 +199,12 @@ int main() {
 		bool p1dead = false;
 		bool p2dead = false;
 		
-		sd.loaded = true;
+
 		irrscreen->run();
 		irrscreen->beginScene();
 		irrscreen->endScene();
 		
+		sd.loaded = true;
 		while (not sd.connected)
 			sleep(1);
 		
