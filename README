@@ -7,6 +7,8 @@
 
 namespace game { // everything goes inside a big global namespace, called "game".
 
+    enum DrawStyle { ALPHA, BETA, FLAT_SYSTEM }; // enums in same style as #defines
+
     class ClassName { // class names are capitalised, in CamelCase. 
     public:
         // functions and members start with a small letter, in camelCase.
@@ -21,7 +23,8 @@ namespace game { // everything goes inside a big global namespace, called "game"
     void ClassName::draw (float thing) { // curly brackets in line with the thing they're attached to.
         if (thing > 0.5) {
             cout << "Hello world!" << endl;
-        } else { // How should we do else curly brackets? I (PTSnoop) prefer this way...
+        } 
+        else {
             cout << "Are you still there?..." << endl;
         }
     }
