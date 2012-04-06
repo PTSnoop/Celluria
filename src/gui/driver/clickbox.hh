@@ -15,9 +15,9 @@ namespace game {
         bool clickNoise(core::position2d<s32>);
         bool moveNoise(core::position2d<s32>);
 
-        virtual clicked();
-        virtual move();
-        virtual unmove();
+        virtual void clicked();
+        virtual void move();
+        virtual void unmove();
 
     private:
         core::rect<s32> screenspace;
