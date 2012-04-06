@@ -6,5 +6,6 @@
 textures/
 build/
 depends/
+tinker/
 depends.d
 source.mk
