@@ -11,10 +11,12 @@ namespace game {
 
     class TextureCard {
     public:
+		TextureCard() {};
         TextureCard(video::IVideoDriver*,video::ITexture*);
         TextureCard(video::IVideoDriver*,string);
         TextureCard(video::IVideoDriver*,video::ITexture*,core::rect<s32>);
         TextureCard(video::IVideoDriver*,string,core::rect<s32>);
+		~TextureCard() {};
 
         void setDriver(video::IVideoDriver*);
 
@@ -33,7 +35,6 @@ namespace game {
         void draw(core::position2d<s32>);
         void draw(core::position2d<s32>,float);
 
-    private:
         video::IVideoDriver* driver;
 
         video::ITexture* texture;

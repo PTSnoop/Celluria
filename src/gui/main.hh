@@ -8,6 +8,8 @@ using namespace std;
 #include "driver/texturepack.hh"
 #include "driver/texturecard.hh"
 
+#include "driver/button.hh"
+
 #ifndef MAIN_HH
 #define MAIN_HH
 

@@ -22,7 +22,7 @@ depends/%.d:src/%.cc
 lockstep: build/gui/lockstep.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o
 	g++ -g -fopenmp -lIrrlicht -o lockstep $^ 
 
-main: build/gui/main.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o
+main: build/gui/main.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o build/gui/driver/button.o build/gui/driver/clickbox.o
 	g++ -g -fopenmp -lIrrlicht -o main $^ 
 
 run: main

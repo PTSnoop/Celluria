@@ -9,6 +9,10 @@ int main() {
 
     TextureCard* clawtex = texpack->getCard("clawbutton");
     TextureCard* clawtex2 = texpack->getCard("clawbutton");
+	
+	Button * apple = new Button(irrscreen->driver,"textures/cell/unity/buttons/apple.png");
+	
+	apple->setPosition( core::position2d<s32>(248,248) );
 
     clawtex->setPosition( core::position2d<s32>(48,48) );
     clawtex2->setPosition( core::position2d<s32>(148,48) );
@@ -27,6 +31,8 @@ int main() {
 
 		if (irrscreen->receiver->IsKeyDown(KEY_SPACE))
 			clawtex->draw(core::position2d<s32>(248,48));
+		
+		apple->draw();
 
         irrscreen->endScene();
 
