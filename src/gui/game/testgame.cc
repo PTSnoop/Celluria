@@ -8,14 +8,15 @@ namespace game {
 	
 	void OnlyGooey::load() {
 		apple = new Button(this, parentGame->irrscreen->driver,"textures/cell/unity/buttons/apple.png");
+		
 		apple->setPosition( core::position2d<s32>(400,248) );
+		apple->placeButton();
 		
 		vector<int> appleParams;
 		appleParams.push_back(2);
 		appleParams.push_back(3);
 		apple->setParams( appleParams );
 		
-		apple->placeButton();
 		addBox(apple);
 	}
 	

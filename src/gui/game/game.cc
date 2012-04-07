@@ -19,7 +19,6 @@ namespace game {
 	}
 	
 	void Game::bindReceiver() {
-		cout << "BINDING" << endl;
 		receiver->setGooeySet(gooeySet);
 	}
 	

@@ -6,6 +6,7 @@
 
 namespace game {
 	
+	// An example Game, with only one Gooey.
 	class TestGame : public Game {
 	public:
 		TestGame(IrrlichtScreen* , TexturePack*);
@@ -13,6 +14,7 @@ namespace game {
 		TexturePack* texpack;
 	};
 	
+	// The example Gooey for a TestGame, with only one Button.
 	class OnlyGooey : public Gooey {
 	public:
 		OnlyGooey(TestGame*);
@@ -24,8 +26,6 @@ namespace game {
 		Button * apple;
 	};
 	
-
-
 }
 
 #endif

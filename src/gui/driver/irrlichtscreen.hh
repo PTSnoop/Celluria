@@ -7,18 +7,24 @@ using namespace irr;
 #define IRRLICHTSCREEN_HH
 
 namespace game {
-  class IrrlichtScreen {
-  public:
-    IrrlichtScreen();
-    IrrlichtDevice* device;
-    video::IVideoDriver* driver;
-    void setResolution(int,int);
-    void setEventReceiver(IrrlichtReceiver*);
-    bool run();
-    void beginScene();
-    void endScene();
-    IrrlichtReceiver* receiver;
-  };
+	
+	// The window that the player sees, and things pertaining thereto.
+	class IrrlichtScreen {
+	public:
+		IrrlichtScreen();
+		IrrlichtDevice* device;
+		video::IVideoDriver* driver;
+		void setEventReceiver(IrrlichtReceiver*);
+		IrrlichtReceiver* receiver;
+		
+		// this one's not really tested yet.
+		void setResolution(int,int);
+		
+		// To show something to the screen, do run(), beginScene(), draw whatever you want to draw, endScene().
+		bool run();
+		void beginScene();
+		void endScene();
+	};
 }
 
 #endif

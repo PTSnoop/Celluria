@@ -13,32 +13,41 @@ using namespace irr;
 
 namespace game {
 
-  struct TextureNode {
-	  video::ITexture* texture;
-	  core::rect<s32> mask;
-  };
+	struct TextureNode {
+		video::ITexture* texture;
+		core::rect<s32> mask;
+	};
 
-  class TexturePack {
-  public:
-    TexturePack( IrrlichtScreen* );
-    video::ITexture* getTexture ( string ) ;
-	TextureCard* getCard ( string ) ;
-    video::SColorf* getColour ( string ) ;
+	// Recalls ITextures, TextureCards and Colours from strings.
+	// Maybe I'll make one for Buttons at some point.
+	class TexturePack {
+	public:
+		TexturePack( IrrlichtScreen* );
+		
+		// Get an ITexture, TextureCard or SColorf from a string.
+		video::ITexture* getTexture ( string ) ;
+		TextureCard* getCard ( string ) ;
+		video::SColorf* getColour ( string ) ;
 	
-    void addTexture ( string , string ) ;
-    void addTexture ( string , video::ITexture* ) ;
+		// Add a texture to the texture bank.
+		// Inputs: key string, filename (or ITexture), optional part of texture.
+		void addTexture ( string , string ) ;
+		void addTexture ( string , video::ITexture* ) ;
 	
-    void addTexture ( string , string , core::rect<s32>) ;
-    void addTexture ( string , video::ITexture* , core::rect<s32>) ;
+		void addTexture ( string , string , core::rect<s32>) ;
+		void addTexture ( string , video::ITexture* , core::rect<s32>) ;
 	
-    void addColour ( string , video::SColorf* ) ;
-    void readFile ( string ) ;
-    
-  private:
-    IrrlichtScreen* irrscreen;
-    map< string , TextureNode > textureBank ;
-    map< string , video::SColorf* > colourBank ;
-  };
+		// Add a colour to the colour bank.
+		void addColour ( string , video::SColorf* ) ;
+		
+		// Read a texture pack from a file. Not implemented yet.
+		void readFile ( string ) ;
+		
+	private:
+		IrrlichtScreen* irrscreen;
+		map< string , TextureNode > textureBank ;
+		map< string , video::SColorf* > colourBank ;
+	};
 
 }
 

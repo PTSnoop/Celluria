@@ -11,17 +11,15 @@ using namespace std;
 #define IRRLICHTRECEIVER_HH
 
 namespace game {
-  
-//  struct ReceiverContext {
-//	  IrrlichtScreen* screen;
-//  }
-
+	
 	struct MouseState {
 		core::position2di position;
 		bool leftButtonDown;
 		MouseState() : leftButtonDown(false) { };
 	} ;
 
+	// Receives all mouse and keyboard input, and sends it to the right objects.
+	// Warning: this class may contain quantum. Try not to observe it.
 	class IrrlichtReceiver : public IEventReceiver {
 	public:
 		MouseState mouse;

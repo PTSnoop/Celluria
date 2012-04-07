@@ -17,23 +17,31 @@ using namespace std;
 
 namespace game{
 
-  class Game {
-  public:
-    void load();
-    void update();
-    void draw();
+	// A game. Contains a World and some Gooeys.
+	class Game {
+	public:
+		
+		// Loads all Gooeys in the GooeySet.
+		void load();
+		// Updates all Gooeys in the GooeySet. Should probably have a dt.
+		void update();
+		// Draws the current Gooey in the GooeySet.
+		void draw();
 	
-    IrrlichtReceiver* receiver ;
-	//void setWorld(World*);
-	void setGooeySet(GooeySet*);
-	void setReceiver(IrrlichtReceiver*);
-	void bindReceiver(IrrlichtReceiver*);
-	void bindReceiver();
+		IrrlichtReceiver* receiver ;
+		//void setWorld(World*);
+		
+		// Sets the GooeySet.
+		void setGooeySet(GooeySet*);
+		
+		// Points the IrrlichtReceiver to send commands to the right GooeySet.
+		void bindReceiver(IrrlichtReceiver*);
+		void bindReceiver();
 
-    //World* world ;
-    GooeySet* gooeySet ;
-    TexturePack* texPack ;
-  };
+		//World* world ;
+		GooeySet* gooeySet ;
+		TexturePack* texPack ;
+	};
 
 }
 
