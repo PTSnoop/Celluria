@@ -11,6 +11,9 @@ namespace game {
             {
             case EMIE_LMOUSE_PRESSED_DOWN:
                 mouse.leftButtonDown = true;
+				if (gooeySet) {
+					gooeySet->clickNoise(mouse.position);
+				}
                 break;
             case EMIE_LMOUSE_LEFT_UP:
                 mouse.leftButtonDown = false;
@@ -18,6 +21,9 @@ namespace game {
             case EMIE_MOUSE_MOVED:
                 mouse.position.X = event.MouseInput.X;
                 mouse.position.Y = event.MouseInput.Y;
+				if (gooeySet) {
+					gooeySet->moveNoise(mouse.position);
+				}
                 break;
             default:
                 // We won't use the wheel
@@ -56,6 +62,10 @@ namespace game {
 		for (u32 i=0; i<KEY_KEY_CODES_COUNT; ++i)
 			KeyIsDown[i] = false;
     }
+    
+    void IrrlichtReceiver::setGooeySet(GooeySet* gs) {
+		gooeySet = gs;
+	}
     
 }
 

@@ -2,6 +2,7 @@
 using namespace irr;
 
 #include <vector>
+#include <iostream>
 using namespace std;
 
 #include "gooey.hh"

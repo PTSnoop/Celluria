@@ -2,6 +2,7 @@
 using namespace irr;
 
 #include <string>
+#include <iostream>
 using namespace std;
 
 #ifndef CLICKBOX_HH

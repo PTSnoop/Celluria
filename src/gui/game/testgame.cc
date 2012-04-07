@@ -7,8 +7,15 @@ namespace game {
 	}
 	
 	void OnlyGooey::load() {
-		apple = new Button(parentGame->irrscreen->driver,"textures/cell/unity/buttons/apple.png");
+		apple = new Button(this, parentGame->irrscreen->driver,"textures/cell/unity/buttons/apple.png");
 		apple->setPosition( core::position2d<s32>(400,248) );
+		
+		vector<int> appleParams;
+		appleParams.push_back(2);
+		appleParams.push_back(3);
+		apple->setParams( appleParams );
+		
+		apple->placeButton();
 		addBox(apple);
 	}
 	
@@ -17,6 +24,13 @@ namespace game {
 	
 	void OnlyGooey::draw() {
 		apple->draw();
+	}
+	
+	void OnlyGooey::event(vector<int> params) {
+		for ( vector<int>::iterator it=params.begin() ; it < params.end(); it++ ) {
+			cout << (*it) << "\t";
+		}
+		cout << endl;
 	}
 	
 	TestGame::TestGame(IrrlichtScreen* iirrscreen, TexturePack* ttexpack) {

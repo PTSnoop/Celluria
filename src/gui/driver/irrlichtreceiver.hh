@@ -5,6 +5,7 @@ using namespace irr;
 using namespace std;
 
 //#include "irrlichtscreen.hh"
+#include "gui/game/gooeyset.hh"
 
 #ifndef IRRLICHTRECEIVER_HH
 #define IRRLICHTRECEIVER_HH
@@ -29,7 +30,9 @@ namespace game {
 		const SEvent::SJoystickEvent & getJoystickState(void) const;
 		const MouseState & getMouseState(void) const;
 		IrrlichtReceiver();
+		void setGooeySet(GooeySet*);
 	private:
+		GooeySet* gooeySet;
 		SEvent::SJoystickEvent joystick;
 		bool KeyIsDown[KEY_KEY_CODES_COUNT];
 	};

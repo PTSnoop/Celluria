@@ -7,39 +7,53 @@ namespace game {
 	}
 	
 	void Button::clicked() {
-		cout << "CLICKED" << endl;
+		if (usefulPointer) {
+			usefulPointer->event(params);
+		}
 	}
-	//void bind(Gooey* gooey) {
-	//	usefulpointer = gooey;
-	//}
 	
-	Button::Button(video::IVideoDriver* ddriver,video::ITexture* ttexture) {
+	void Button::bind(Gooey* gooey) {
+		usefulPointer = gooey;
+	}
+	
+	void Button::setParams(vector<int> pparams) {
+		params = pparams;
+	}
+	
+	Button::Button(Gooey* gooey, video::IVideoDriver* ddriver,video::ITexture* ttexture) {
+		bind(gooey);
 		driver = ddriver;
 		texture = ttexture;
 		defaults(ttexture);
 		placeButton();
 	}
 
-	Button::Button(video::IVideoDriver* ddriver, string ttexname) {
+	Button::Button(Gooey* gooey, video::IVideoDriver* ddriver, string ttexname) {
+		bind(gooey);
 		driver = ddriver;
 		texture = driver->getTexture(ttexname.c_str());
 		defaults(texture);
 		placeButton();
+		setParams(vector<int>());
 	}
 
-	Button::Button(video::IVideoDriver* ddriver,video::ITexture* ttexture,core::rect<s32> pos) {
+	Button::Button(Gooey* gooey, video::IVideoDriver* ddriver,video::ITexture* ttexture,core::rect<s32> pos) {
+		bind(gooey);
 		driver = ddriver;
 		texture = ttexture;
 		defaults(ttexture);
 		setSourceRect(pos);
 		placeButton();
+		setParams(vector<int>());
 	}
 
-	Button::Button(video::IVideoDriver* ddriver, string ttexname, core::rect<s32> pos) {
+	Button::Button(Gooey* gooey, video::IVideoDriver* ddriver, string ttexname, core::rect<s32> pos) {
+		bind(gooey);
 		driver = ddriver;
 		texture = driver->getTexture(ttexname.c_str());
 		defaults(texture);
 		setSourceRect(pos);
 		placeButton();
+		setParams(vector<int>());
 	}
 }

@@ -2,7 +2,7 @@
 
 namespace game {
 	GooeySet::GooeySet() {
-		active = 0;
+		active = -1;
 	}
 	
 	void GooeySet::addGooey(Gooey* ggooey) {
@@ -38,6 +38,6 @@ namespace game {
 	}
 	
 	void GooeySet::moveNoise(core::position2d<s32> noise) {
-		set.at(active)->clickNoise(noise);
+		set.at(active)->moveNoise(noise);
 	}
 }

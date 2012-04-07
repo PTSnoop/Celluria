@@ -20,6 +20,7 @@ namespace game {
 		void load();
 		void update();
 		void draw();
+		void event(vector<int>);
 		Button * apple;
 	};
 	

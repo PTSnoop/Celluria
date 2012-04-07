@@ -15,11 +15,12 @@ namespace game {
 	
 	void Game::bindReceiver(IrrlichtReceiver* reciv) {
 		receiver = reciv;
-		//receiver->setGooeySet(gooeySet);
+		receiver->setGooeySet(gooeySet);
 	}
 	
 	void Game::bindReceiver() {
-		//receiver->setGooeySet(gooeySet);
+		cout << "BINDING" << endl;
+		receiver->setGooeySet(gooeySet);
 	}
 	
 	//void Game::setWorld(World* wworld) {
