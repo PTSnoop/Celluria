@@ -1,13 +1,15 @@
 #include "irrlicht/irrlicht.h"
+using namespace irr;
 
 #include <vector>
 using namespace std;
 
-#include "irrlichtreceiver.hh"
-#include "texturepack.hh"
+#include "gui/driver/texturepack.hh"
 
 #include "gooey.hh"
-#include "world.hh"
+#include "gooeyset.hh"
+//#include "world/world.hh"
+#include "gui/driver/irrlichtreceiver.hh"
 
 #ifndef GAME_HH
 #define GAME_HH
@@ -16,15 +18,19 @@ namespace game{
 
   class Game {
   public:
-    virtual Game::Game () =0;
-    virtual void load() =0;
-    virtual void update() =0;
-    virtual void draw() =0;
+    void load();
+    void update();
+    void draw();
+	
     IrrlichtReceiver* receiver ;
+	//void setWorld(World*);
+	void setGooeySet(GooeySet*);
+	void setReceiver(IrrlichtReceiver*);
+	void bindReceiver(IrrlichtReceiver*);
+	void bindReceiver();
 
-  private:
-    World* world ;
-    vector<Gooey*> gooeySet ;
+    //World* world ;
+    GooeySet* gooeySet ;
     TexturePack* texPack ;
   };
 

@@ -17,12 +17,12 @@ depends.d:source.mk
 
 depends/%.d:src/%.cc
 	mkdir -p `dirname $@`
-	g++ -g -M $< -I src> $@
+	g++ -g -M $< -I src > $@
 
 lockstep: build/gui/lockstep.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o
 	g++ -g -fopenmp -lIrrlicht -o lockstep $^ 
 
-main: build/gui/main.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o build/gui/driver/button.o build/gui/driver/clickbox.o
+main: build/gui/main.o build/gui/driver/irrlichtscreen.o build/gui/driver/irrlichtreceiver.o build/gui/driver/texturepack.o build/gui/driver/texturecard.o build/net/tdsocket/Socket.o build/gui/driver/button.o build/gui/driver/clickbox.o build/gui/game/game.o build/gui/game/gooey.o build/gui/game/gooeyset.o build/gui/game/testgame.o
 	g++ -g -fopenmp -lIrrlicht -o main $^ 
 
 run: main
