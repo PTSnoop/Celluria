@@ -3,13 +3,13 @@
 namespace game {
 
 	void IrrlichtScreen::setResolution(int xxres,int yyres) {
-		if (xres == 0) { // automatically find screen resolution
+		if (xxres == 0) { // automatically find screen resolution
 
 			// create temporary device
 			IrrlichtDevice *nulldevice = createDevice(video::EDT_NULL);
 			core::dimension2d<u32> deskres = nulldevice->getVideoModeList()->getDesktopResolution();
-			xres = deskres.X;
-			yres = deskres.Y;
+			xres = deskres.Width;
+			yres = deskres.Height;
 			nulldevice -> drop();
 			// create real device (leaving as windowed for now)
 			device = createDevice(video::EDT_OPENGL, deskres, 32, false);

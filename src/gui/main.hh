@@ -10,7 +10,7 @@ using namespace std;
 #include "driver/button.hh"
 
 #include "gui/game/game.hh"
-#include "gui/game/testgame.hh"
+#include "gui/game/mainmenugame.hh"
 
 #ifndef MAIN_HH
 #define MAIN_HH

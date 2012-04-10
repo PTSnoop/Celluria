@@ -20,8 +20,8 @@ namespace game {
 		
 		// this one's not really tested yet.
 		void setResolution(int,int);
-		int resx;
-		int resy;
+		int xres;
+		int yres;
 		
 		// To show something to the screen, do run(), beginScene(), draw whatever you want to draw, endScene().
 		bool run();

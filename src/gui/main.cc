@@ -6,8 +6,10 @@ int main() {
 
     TexturePack * texpack = new TexturePack(irrscreen);
 	texpack->setFont("fonts/Gudea14/font.xml");
+	texpack->addTexture("rect","textures/rect.png");	
+	cout << texpack << endl;
 	
-	TestGame * game = new TestGame (irrscreen, texpack);
+	MainMenuGame * game = new MainMenuGame (irrscreen, texpack);
 	game->load();
     
     while (irrscreen->run()) {      
