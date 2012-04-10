@@ -1,12 +1,14 @@
-#include "irrlicht/irrlicht.h"
+#include <irrlicht/irrlicht.h>
+using namespace irr;
+
 #include <map>
 #include <string>
 using namespace std;
 
 #include "irrlichtscreen.hh"
-#include <irrlicht/irrlicht.h>
-using namespace irr;
 #include "texturecard.hh"
+#include "button.hh"
+#include "gui/game/gooey.hh"
 
 #ifndef TEXTUREPACK_HH
 #define TEXTUREPACK_HH
@@ -24,8 +26,9 @@ namespace game {
 	public:
 		TexturePack( IrrlichtScreen* );
 		
-		// Get an ITexture, TextureCard or SColorf from a string.
+		// Get an ITexture, Button, TextureCard or SColorf from a string.
 		video::ITexture* getTexture ( string ) ;
+		Button* getButton( Gooey*, string );
 		TextureCard* getCard ( string ) ;
 		video::SColorf* getColour ( string ) ;
 	

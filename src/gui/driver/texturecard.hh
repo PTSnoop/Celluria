@@ -4,13 +4,15 @@ using namespace irr;
 #include <string>
 using namespace std;
 
+#include "card.hh"
+
 #ifndef TEXTURECARD_HH
 #define TEXTURECARD_HH
 
 namespace game {
 
 	// Something drawn to the screen.
-	class TextureCard {
+	class TextureCard : public Card {
 	public:
 		
 		// Can be constructed from an ITexture* or a filename.
@@ -21,8 +23,6 @@ namespace game {
 		TextureCard(video::IVideoDriver*,video::ITexture*,core::rect<s32>);
 		TextureCard(video::IVideoDriver*,string,core::rect<s32>);
 		~TextureCard() {};
-
-		void setDriver(video::IVideoDriver*);
 
 		// Change the texture being drawn. Takes ITexture* or filename.
 		void setTexture(video::ITexture*);
@@ -44,6 +44,7 @@ namespace game {
 		void draw(core::position2d<s32>,float);
 
 		video::IVideoDriver* driver;
+		void setDriver(video::IVideoDriver*);
 
 		video::ITexture* texture;
 		core::position2d<s32> position;

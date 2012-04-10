@@ -7,7 +7,10 @@ namespace game {
 	}
 	
 	void OnlyGooey::load() {
-		apple = new Button(this, parentGame->irrscreen->driver,"textures/cell/unity/buttons/apple.png");
+		parentGame->texpack->addTexture("apple","textures/cell/unity/buttons/apple.png");
+		apple = parentGame->texpack->getButton(this,"apple");
+
+		//apple = new Button(this, parentGame->irrscreen->driver,"textures/cell/unity/buttons/apple.png");
 		
 		apple->setPosition( core::position2d<s32>(400,248) );
 		apple->placeButton();

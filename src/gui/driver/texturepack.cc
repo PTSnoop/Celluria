@@ -56,6 +56,13 @@ namespace game {
 			return (*pick).second.texture;
 		return 0;
 	}
+
+	Button* TexturePack::getButton(Gooey* gooey, string texname) {
+		map<string,TextureNode>::iterator pick = textureBank.find(texname);
+		if (pick != textureBank.end() )
+			return new Button (gooey, irrscreen->driver, (*pick).second.texture);//,(*pick).second.mask);
+		return 0;
+	}
 	
 	TextureCard* TexturePack::getCard(string texname) {
 		map<string,TextureNode>::iterator pick = textureBank.find(texname);

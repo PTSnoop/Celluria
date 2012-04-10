@@ -40,10 +40,6 @@ TextureCard::TextureCard(video::IVideoDriver* ddriver, string ttexname, core::re
 	setSourceRect(pos);
 }
 
-void TextureCard::setDriver(video::IVideoDriver* ddriver) {
-	driver = ddriver;
-}
-
 void TextureCard::setTexture(video::ITexture* ttexture) {
 	texture = ttexture;
 }
@@ -122,6 +118,10 @@ void TextureCard::draw(core::position2d<s32> pos, float rot) {
 			useAlpha, 
 			colour
 	);
+}
+
+void TextureCard::setDriver(video::IVideoDriver* ddriver) {
+	driver = ddriver;
 }
 /*
 

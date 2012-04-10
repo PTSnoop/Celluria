@@ -40,7 +40,7 @@ namespace game{
 
 		//World* world ;
 		GooeySet* gooeySet ;
-		TexturePack* texPack ;
+		TexturePack* texpack ;
 	};
 
 }
