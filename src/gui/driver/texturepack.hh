@@ -3,11 +3,13 @@ using namespace irr;
 
 #include <map>
 #include <string>
+#include <iostream>
 using namespace std;
 
 #include "irrlichtscreen.hh"
 #include "texturecard.hh"
 #include "button.hh"
+#include "textcard.hh"
 #include "gui/game/gooey.hh"
 
 #ifndef TEXTUREPACK_HH
@@ -30,6 +32,7 @@ namespace game {
 		video::ITexture* getTexture ( string ) ;
 		Button* getButton( Gooey*, string );
 		TextureCard* getCard ( string ) ;
+		TextCard* getTextCard ( string ) ;
 		video::SColorf* getColour ( string ) ;
 	
 		// Add a texture to the texture bank.
@@ -42,6 +45,10 @@ namespace game {
 	
 		// Add a colour to the colour bank.
 		void addColour ( string , video::SColorf* ) ;
+
+		// For now, I'm assuming everything's going to use the same font.
+		// Set the font.
+		void setFont ( string );
 		
 		// Read a texture pack from a file. Not implemented yet.
 		void readFile ( string ) ;
@@ -50,6 +57,8 @@ namespace game {
 		IrrlichtScreen* irrscreen;
 		map< string , TextureNode > textureBank ;
 		map< string , video::SColorf* > colourBank ;
+		gui::IGUIFont* font;
+		gui::IGUIEnvironment* env;
 	};
 
 }

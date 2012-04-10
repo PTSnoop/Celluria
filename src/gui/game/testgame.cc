@@ -21,6 +21,12 @@ namespace game {
 		apple->setParams( appleParams );
 		
 		addBox(apple);
+
+		label = parentGame->texpack->getTextCard("This is text!");
+		label->setPosition(core::position2d<s32>(10,10));
+
+		label2 = parentGame->texpack->getTextCard("This is some more text.");
+		label2->setPosition(core::position2d<s32>(50,70));
 	}
 	
 	void OnlyGooey::update() {
@@ -28,6 +34,8 @@ namespace game {
 	
 	void OnlyGooey::draw() {
 		apple->draw();
+		label->draw();
+		label2->draw();
 	}
 	
 	void OnlyGooey::event(vector<int> params) {

@@ -5,6 +5,7 @@ int main() {
 	IrrlichtScreen * irrscreen = new IrrlichtScreen;
 
     TexturePack * texpack = new TexturePack(irrscreen);
+	texpack->setFont("fonts/Gudea14/font.xml");
 	
 	TestGame * game = new TestGame (irrscreen, texpack);
 	game->load();

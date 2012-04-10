@@ -24,6 +24,8 @@ namespace game {
 		void draw();
 		void event(vector<int>);
 		Button * apple;
+		TextCard * label;
+		TextCard * label2;
 	};
 	
 }

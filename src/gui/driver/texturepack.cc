@@ -4,6 +4,8 @@ namespace game {
 
 	TexturePack::TexturePack (IrrlichtScreen* irrlichtscreen) {
 		irrscreen = irrlichtscreen;
+		env = irrscreen->device->getGUIEnvironment();
+		font = env->getBuiltInFont();
 	}
 	
 	void TexturePack::addTexture(string texname, string intexture) {
@@ -46,6 +48,19 @@ namespace game {
 		colourBank.insert( pair<string,video::SColorf*>(colourname,incolour) );
 	}
 
+	void TexturePack::setFont(string fontname) {
+		gui::IGUISkin* skin = env->getSkin();
+		font = env->getFont(fontname.c_str());
+		if (font) { 
+			skin->setFont(font);
+			env->getSkin()->setColor(gui::EGDC_BUTTON_TEXT,video::SColor(255,255,255,255));
+		}
+		else {
+			font = env->getBuiltInFont();
+			skin->setFont(font);
+		}
+	}
+
 	void TexturePack::readFile(string filename) {
 		
 	}
@@ -69,6 +84,10 @@ namespace game {
 		if (pick != textureBank.end() )
 			return new TextureCard (irrscreen->driver, (*pick).second.texture,(*pick).second.mask);
 		return 0;
+	}
+
+	TextCard* TexturePack::getTextCard(string cardtext) {
+		return new TextCard ( irrscreen->driver, font, cardtext);
 	}
 
 	video::SColorf* TexturePack::getColour(string colname) {
