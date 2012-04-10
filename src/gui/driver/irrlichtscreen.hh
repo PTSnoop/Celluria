@@ -12,6 +12,7 @@ namespace game {
 	class IrrlichtScreen {
 	public:
 		IrrlichtScreen();
+		IrrlichtScreen(int,int);
 		IrrlichtDevice* device;
 		video::IVideoDriver* driver;
 		void setEventReceiver(IrrlichtReceiver*);
@@ -19,6 +20,8 @@ namespace game {
 		
 		// this one's not really tested yet.
 		void setResolution(int,int);
+		int resx;
+		int resy;
 		
 		// To show something to the screen, do run(), beginScene(), draw whatever you want to draw, endScene().
 		bool run();

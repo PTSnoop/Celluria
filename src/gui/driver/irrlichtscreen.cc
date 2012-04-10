@@ -2,20 +2,26 @@
 
 namespace game {
 
-	void IrrlichtScreen::setResolution(int xres,int yres) {
+	void IrrlichtScreen::setResolution(int xxres,int yyres) {
 		if (xres == 0) { // automatically find screen resolution
 
 			// create temporary device
 			IrrlichtDevice *nulldevice = createDevice(video::EDT_NULL);
 			core::dimension2d<u32> deskres = nulldevice->getVideoModeList()->getDesktopResolution();
+			xres = deskres.X;
+			yres = deskres.Y;
 			nulldevice -> drop();
 			// create real device (leaving as windowed for now)
 			device = createDevice(video::EDT_OPENGL, deskres, 32, false);
 
 		} else { // use given resolution
+			xres = xxres;
+			yres = yyres;
 			device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(xres,yres), 32, false);
 			driver = device->getVideoDriver();
 		}
+		receiver = new IrrlichtReceiver;
+		device->setEventReceiver(receiver);
 	}
 
 	void IrrlichtScreen::setEventReceiver(IrrlichtReceiver* rreceiver) {
@@ -23,9 +29,11 @@ namespace game {
 	}
 
 	IrrlichtScreen::IrrlichtScreen() {
-		setResolution(1024,300);
-		receiver = new IrrlichtReceiver;
-		device->setEventReceiver(receiver);
+		setResolution(0,0);
+	}
+
+	IrrlichtScreen::IrrlichtScreen(int xres, int yres) {
+		setResolution(xres,yres);
 	}
 
 	bool IrrlichtScreen::run() {

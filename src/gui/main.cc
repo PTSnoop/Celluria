@@ -2,7 +2,7 @@
 
 int main() {
 	
-	IrrlichtScreen * irrscreen = new IrrlichtScreen;
+	IrrlichtScreen * irrscreen = new IrrlichtScreen (1024,768);
 
     TexturePack * texpack = new TexturePack(irrscreen);
 	texpack->setFont("fonts/Gudea14/font.xml");
