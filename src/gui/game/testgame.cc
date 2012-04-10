@@ -26,16 +26,21 @@ namespace game {
 		label->setPosition(core::position2d<s32>(10,10));
 
 		label2 = parentGame->texpack->getTextCard("This is some more text.");
-		label2->setPosition(core::position2d<s32>(50,70));
+		label2->setPosition(core::position2d<s32>(10,70));
+
+		inbox = parentGame->texpack->getInputBox(core::rect<s32>(10,130,300,150));
+		inbox->setText("Type here");
 	}
 	
 	void OnlyGooey::update() {
+		cout << inbox->getText() << endl;
 	}
 	
 	void OnlyGooey::draw() {
 		apple->draw();
 		label->draw();
 		label2->draw();
+		inbox->draw();
 	}
 	
 	void OnlyGooey::event(vector<int> params) {

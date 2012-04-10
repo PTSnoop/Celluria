@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 #include "gooey.hh"
 #include "game.hh"
 
@@ -26,6 +29,7 @@ namespace game {
 		Button * apple;
 		TextCard * label;
 		TextCard * label2;
+		InputBox * inbox;
 	};
 	
 }

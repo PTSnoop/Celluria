@@ -10,6 +10,7 @@ using namespace std;
 #include "texturecard.hh"
 #include "button.hh"
 #include "textcard.hh"
+#include "inputbox.hh"
 #include "gui/game/gooey.hh"
 
 #ifndef TEXTUREPACK_HH
@@ -34,6 +35,7 @@ namespace game {
 		TextureCard* getCard ( string ) ;
 		TextCard* getTextCard ( string ) ;
 		video::SColorf* getColour ( string ) ;
+		InputBox* getInputBox (core::rect<s32>);
 	
 		// Add a texture to the texture bank.
 		// Inputs: key string, filename (or ITexture), optional part of texture.

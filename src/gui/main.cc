@@ -14,6 +14,7 @@ int main() {
 
         irrscreen->beginScene();
 
+		game->update();
 		game->draw();
 
         irrscreen->endScene();

@@ -90,6 +90,10 @@ namespace game {
 		return new TextCard ( irrscreen->driver, font, cardtext);
 	}
 
+	InputBox* TexturePack::getInputBox(core::rect<s32> inrect) {
+		return new InputBox (env, inrect);
+	}
+
 	video::SColorf* TexturePack::getColour(string colname) {
 		map<string,video::SColorf*>::iterator pick = colourBank.find(colname);
 		if (pick != colourBank.end() )
