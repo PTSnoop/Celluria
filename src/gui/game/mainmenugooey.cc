@@ -52,6 +52,33 @@ namespace game {
 		bgbar->setScale(core::vector2df(1024,168));
 		bgbar->setPosition(core::position2d<s32>(0,600-148));
 		bgbar->setColour(video::SColor(255,59,59,59));
+
+		ButtonBox* quickgame_box = new ButtonBox (this,core::rect<s32>(616,600-96-26,616+175,600-96));
+		ButtonBox* skirmish_box = new ButtonBox (this,core::rect<s32>(616,600-61-26,616+175,600-61));
+		ButtonBox* multiplayer_box = new ButtonBox (this,core::rect<s32>(616,600-28-26,616+175,600-26));
+		ButtonBox* options_box = new ButtonBox (this,core::rect<s32>(816,600-96-26,816+175,600-96));
+		ButtonBox* credits_box = new ButtonBox (this,core::rect<s32>(816,600-61-26,816+175,600-61));
+		ButtonBox* quit_box = new ButtonBox (this,core::rect<s32>(816,600-28-26,816+175,600-28));
+
+		vector<int> nullparams;
+		vector<int> quitparams;
+
+		nullparams.push_back(0);
+		quitparams.push_back(6);
+
+		quickgame_box->setParams(nullparams);
+		skirmish_box->setParams(nullparams);
+		multiplayer_box->setParams(nullparams);
+		options_box->setParams(nullparams);
+		credits_box->setParams(nullparams);
+		quit_box->setParams(quitparams);
+
+		addBox(quickgame_box);
+		addBox(skirmish_box);
+		addBox(multiplayer_box);
+		addBox(options_box);
+		addBox(credits_box);
+		addBox(quit_box);
 	}
 	
 	void MainMenuGooey::update() {

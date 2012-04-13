@@ -2,11 +2,13 @@
 using namespace irr;
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 #include "gooey.hh"
 #include "game.hh"
 #include "gui/driver/texturepack.hh"
+#include "gui/driver/buttonbox.hh"
 
 #ifndef TESTGAME_HH
 #define TESTGAME_HH
