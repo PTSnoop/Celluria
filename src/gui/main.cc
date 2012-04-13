@@ -2,10 +2,10 @@
 
 int main() {
 	
-	IrrlichtScreen * irrscreen = new IrrlichtScreen (1024,768);
+	IrrlichtScreen * irrscreen = new IrrlichtScreen (1024,600);
 
     TexturePack * texpack = new TexturePack(irrscreen);
-	texpack->setFont("fonts/Gudea14/font.xml");
+	texpack->setFont("fonts/Gudea12/font.xml");
 	texpack->addTexture("rect","textures/rect.png");	
 	cout << texpack << endl;
 	

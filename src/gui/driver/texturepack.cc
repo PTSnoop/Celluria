@@ -94,6 +94,10 @@ namespace game {
 		return new InputBox (env, inrect);
 	}
 
+	TextBox* TexturePack::getTextBox(string text, core::rect<s32> inrect) {
+		return new TextBox (env, text, inrect);
+	}
+
 	video::SColorf* TexturePack::getColour(string colname) {
 		map<string,video::SColorf*>::iterator pick = colourBank.find(colname);
 		if (pick != colourBank.end() )
