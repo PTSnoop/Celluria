@@ -21,7 +21,7 @@ namespace game {
 		virtual void draw() {};
 		
 		// Called when something's clicked on. The vector of ints comes from the button.
-		virtual void event(vector<int>) {};
+		virtual void event(int eventType, vector<int>) {};
 		
 		// Called from the receiver whenever there's a mouse event anywhere. Goes through the list of ClickBoxes to see if they're relevant.
 		void clickNoise(core::position2d<s32>);

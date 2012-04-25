@@ -1,10 +1,22 @@
 #include "buttonbox.hh"
 
 namespace game {
-	
+
 	void ButtonBox::clicked() {
 		if (usefulPointer) {
-			usefulPointer->event(params);
+			usefulPointer->event(1,params);
+		}
+	}
+	
+	void ButtonBox::moved() {
+		if (usefulPointer) {
+			usefulPointer->event(2,params);
+		}
+	}
+	
+	void ButtonBox::notmoved() {
+		if (usefulPointer) {
+			usefulPointer->event(3,params);
 		}
 	}
 	

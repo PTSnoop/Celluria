@@ -27,10 +27,10 @@ namespace game {
 		virtual void clicked() {};
 		
 		// called when the mouse is moved over the clickbox
-		virtual void move() {};
+		virtual void moved() {};
 		
 		//called when the mouse is moved, but isn't over the clickbox
-		virtual void unmove() {};
+		virtual void notmoved() {};
 
 	private:
 		core::rect<s32> screenspace;

@@ -22,11 +22,11 @@ namespace game {
 
 	bool ClickBox::moveNoise(core::position2d<s32> noise) {
 		if (screenspace.isPointInside(noise)) {
-			move();
+			moved();
 			return true;
 		}
 		else {
-			unmove();
+			notmoved();
 			return false;
 		}
 	}

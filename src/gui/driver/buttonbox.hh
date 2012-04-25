@@ -24,6 +24,8 @@ namespace game {
 		
 		// Called whenever the buttonbox's clicked. Passes params up to the Gooey.
 		void clicked();
+		void moved();
+		void notmoved();
 		// The params that get given to the Gooey when clicked.
 		vector<int> params;
 		void setParams(vector<int>);

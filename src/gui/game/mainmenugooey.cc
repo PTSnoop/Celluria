@@ -9,6 +9,7 @@ namespace game {
 		label = texpack->getTextCard(labeltext);//, core::rect<s32>(0,0,160,160));
 		//label->setRightJustified(true);
 		setPosition(pos);
+		isMouseOver = false;
 	}
 
 	void MainButton::setPosition(core::position2d<s32> pos) {
@@ -17,6 +18,21 @@ namespace game {
 		mid->setScale(core::vector2df(3.5,1.0));
 		right->setPosition(pos + core::position2d<s32>(32+112,0));
 		label->setPosition(pos + core::position2d<s32>(8,4));
+	}
+
+	void MainButton::onMouseOver(bool over) {
+		if (over and not isMouseOver) {
+			left->setColour(video::SColor(127,127,127,255));
+			mid->setColour(video::SColor(127,127,127,255));
+			right->setColour(video::SColor(127,127,127,255));
+			isMouseOver = true;
+		}
+		else if (not over and isMouseOver) {
+			left->setColour(video::SColor(255,255,255,255));
+			mid->setColour(video::SColor(255,255,255,255));
+			right->setColour(video::SColor(255,255,255,255));
+			isMouseOver = false;
+		}
 	}
 
 	void MainButton::draw() {
@@ -60,19 +76,19 @@ namespace game {
 		ButtonBox* credits_box = new ButtonBox (this,core::rect<s32>(816,600-61-26,816+175,600-61));
 		ButtonBox* quit_box = new ButtonBox (this,core::rect<s32>(816,600-28-26,816+175,600-28));
 
-		vector<int> nullparams;
-		vector<int> quitparams;
-
-		nullparams.push_back(0);
-		quitparams.push_back(6);
-
-		quickgame_box->setParams(nullparams);
-		skirmish_box->setParams(nullparams);
-		multiplayer_box->setParams(nullparams);
-		options_box->setParams(nullparams);
-		credits_box->setParams(nullparams);
-		quit_box->setParams(quitparams);
-
+		quickgame_box->setParams(vectorOfInts(1));
+		skirmish_box->setParams(vectorOfInts(2));
+		multiplayer_box->setParams(vectorOfInts(3));
+		options_box->setParams(vectorOfInts(4));
+		credits_box->setParams(vectorOfInts(5));
+		quit_box->setParams(vectorOfInts(6));
+/*
+		skirmish_box->setParams(vectorOfInts(2));
+		multiplayer_box->setParams(vectorOfInts(3));
+		options_box->setParams(vectorOfInts(4));
+		credits_box->setParams(vectorOfInts(5));
+		quit_box->setParams(vectorOfInts(6));
+*/
 		addBox(quickgame_box);
 		addBox(skirmish_box);
 		addBox(multiplayer_box);
@@ -96,11 +112,57 @@ namespace game {
 		quit->draw();
 	}
 	
-	void MainMenuGooey::event(vector<int> params) {
-		for ( vector<int>::iterator it=params.begin() ; it < params.end(); it++ ) {
-			cout << (*it) << "\t";
+	void MainMenuGooey::event(int eventType ,vector<int> params) {
+		if (eventType == 1) {
+			for ( vector<int>::iterator it=params.begin() ; it < params.end(); it++ ) {
+				cout << (*it) << "\t";
+			}
+			cout << endl;
 		}
-		cout << endl;
+		else if (eventType == 2) {
+			int button = params[0];
+			switch (button) {
+				case 1:
+					quickgame->onMouseOver(true);
+				break;
+				case 2:
+					skirmish->onMouseOver(true);
+				break;
+				case 3:
+					multiplayer->onMouseOver(true);
+				break;
+				case 4:
+					options->onMouseOver(true);
+				break;
+				case 5:
+					credits->onMouseOver(true);
+				break;
+				case 6:
+					quit->onMouseOver(true);
+			}
+		}
+		else if (eventType == 3) {
+			int button = params[0];
+			switch (button) {
+				case 1:
+					quickgame->onMouseOver(false);
+				break;
+				case 2:
+					skirmish->onMouseOver(false);
+				break;
+				case 3:
+					multiplayer->onMouseOver(false);
+				break;
+				case 4:
+					options->onMouseOver(false);
+				break;
+				case 5:
+					credits->onMouseOver(false);
+				break;
+				case 6:
+					quit->onMouseOver(false);
+			}
+		}
 	}
 	
 }

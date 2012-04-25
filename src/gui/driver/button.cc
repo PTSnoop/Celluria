@@ -8,7 +8,7 @@ namespace game {
 	
 	void Button::clicked() {
 		if (usefulPointer) {
-			usefulPointer->event(params);
+			usefulPointer->event(1,params);
 		}
 	}
 	

@@ -9,6 +9,7 @@ using namespace std;
 #include "game.hh"
 #include "gui/driver/texturepack.hh"
 #include "gui/driver/buttonbox.hh"
+#include "useful.hh"
 
 #ifndef TESTGAME_HH
 #define TESTGAME_HH
@@ -26,6 +27,8 @@ namespace game {
 		TextCard * label;
 		void setPosition(core::position2d<s32>);
 		void draw();
+		void onMouseOver(bool);
+		bool isMouseOver;
 	};
 
 	// The Gooey for a Main Menu.
@@ -36,12 +39,11 @@ namespace game {
 		void load();
 		void update();
 		void draw();
-		void event(vector<int>);
+		void event(int,vector<int>);
 
 		// For now, I'll just handle the background in the Gooey.
 		// Later on, I'll have the things-floating-past as a Widget.
 		TextureCard * background;
-
 		TextureCard * bgbar;
 
 		MainButton* quickgame;
