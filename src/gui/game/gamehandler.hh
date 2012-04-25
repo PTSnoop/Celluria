@@ -2,6 +2,7 @@
 
 #include "gui/driver/irrlichtreceiver.hh"
 #include "gui/driver/texturepack.hh"
+#include "gui/game/game.hh"
 
 #ifndef GAMEHANDLER_HH
 #define GAMEHANDLER_HH

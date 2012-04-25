@@ -3,10 +3,11 @@
 #include <iostream>
 using namespace std;
 
-#include "game/gamehandler.hh"
-#include "driver/irrlichtscreen.hh"
-#include "driver/texturepack.hh"
-#include "driver/texturecard.hh"
+#include "gui/game/gamehandler.hh"
+#include "gui/game/game.hh"
+#include "gui/driver/irrlichtscreen.hh"
+#include "gui/driver/texturepack.hh"
+#include "gui/driver/texturecard.hh"
 
 #include "net/tdsocket/Socket.hh"
 

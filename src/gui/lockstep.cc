@@ -1,4 +1,4 @@
-#include "main.hh"
+#include "lockstep.hh"
 #include <vector>
 #include <cmath>
 #include <map>
